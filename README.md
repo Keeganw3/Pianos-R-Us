@@ -91,6 +91,11 @@ The email marketing was set up through Mailchimp which allowed users to subscrib
 ![Mailchimp Subscription](static/images/pp4-logout-page.png)
 ![Mailchimp Subscription List](static/images/pp4-logout-page.png)
 
+## Privacy Policy
+A privacy policy was generated using https://www.privacypolicygenerator.info/. This was done to address the GDPR policies. The link was placed in the footer of each page of the website and the policy was downloaded  and given styling to match the rest of the website.
+
+![Privacy Policy](static/images/pp4-logout-page.png)
+
 # Future Features to be added
 ### Likes/Dislikes
 * This would allow the user to like and dislike posts and give people an indicator of whether they should read them or not.
