@@ -69,11 +69,11 @@ Admins can make posts on topics they care about or want to share news on. They c
 
 ![Footer](static/images/pp4-footer-screenshot.png)
 
-## Search Engine Optimization
-### Keywords
+## SEO and Marketing
+### Keywords and descriptions
 A range of words were brainstormed and chosen relating to pianos and music along with words that a user may tangentially use when looking these up. This included short-tail keywords and long-tail phrases to attract large and relevant numbers of potential customers to the website.
 
-The words and phrases included were: piano store, piano shop, electronic piano, thomann dp 95, electronic keyboards, 61 key electronic keyboard, wurlitzer electric piano, best electronic keyboard for beginners, bastien piano basics, piano songbook, piano book, piano classics, teach yourself piano, piano books for beginners, piano stool, piano benches
+The words and phrases included were: piano store, piano shop, electronic piano, thomann dp 95, electronic keyboards, 61 key electronic keyboard, wurlitzer electric piano, best electronic keyboard for beginners, bastien piano basics, piano songbook, piano book, piano classics, teach yourself piano, piano books for beginners, piano stool, piano benches.
 
 The relevancy and authoritativeness of these phrases were chosen by manually looking them up on google and seeing their search traffic combined with using wordtracker.com to check the volume of the web searches and competitiveness.
 
@@ -81,6 +81,15 @@ The words and phrases were used for:
 * Description and keyword meta tags in html
 * Informational alt tags
 
+### Marketing Techniques
+The types of marketing used for this app were social media marketing and email marketing. A facebook page was set up to advertise that this website exists.
+
+![Facebook page 1](static/images/pp4-logout-page.png)
+
+The email marketing was set up through Mailchimp which allowed users to subscribe to a newsletter from the website by entering their email address. This was placed in the footer of the website on each page. The subscribers list is maintained on Mailchimp.
+
+![Mailchimp Subscription](static/images/pp4-logout-page.png)
+![Mailchimp Subscription List](static/images/pp4-logout-page.png)
 
 # Future Features to be added
 ### Likes/Dislikes
