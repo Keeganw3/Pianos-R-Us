@@ -168,7 +168,7 @@ A privacy policy was generated using https://www.privacypolicygenerator.info/. T
 </details>
 
 ## Planning
-* A Github project with issues was used as an Agile Tool for tracking progress on this project. The issues were tracked using a kanban board and were linked to an Epic that would show the over all goal of the issues.
+* A project in Github was used as an Agile Tool for tracking the building process of this project. Issues were tracked using a kanban board and linked to multiple Epics that would show the over all progress of this project's development. Each issue was tested to ensure that they could be considered completed. The criteria of these tests are outlined below.
 
 # Testing
 ## Validator Testing
