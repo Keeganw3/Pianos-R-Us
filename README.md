@@ -1,11 +1,11 @@
 <h1 align="center">Pianos-R-Us</h1>
 
 (Include live link to project somewhere here)
-<p> This project is a news-sharing application based on people sharing news they care about and hearing other people's thoughts.
+<p> Pianos-R-Us is a B2C commerce application that aims to sell pianos/keyboards and a music books to music lovers and learners alike. The goal of the website is to provide users with a intuitive, interactive site that they can return to by hearing about discounts through the subscription service or facebook page and by having an account model that saves customer's details.
 
-The average user can view all posts and if they make an account they can comment on posts.
+The site has been created as a retail store that allows products to be filtered out and searched for based on the customers needs.
 
-Admins can make posts on topics they care about or want to share news on. They can also comment on any posts and approve comments whenever a user with an account makes one.</p>
+Users can order one item or multiple items and place them into a cart to be bought at their convenience through the Stripe payment system. They are able to edit and remove products from the cart whenever they want and the total cost is displayed at all times. Users can also make an account to save their details, rate products and give reviews to products they have bought.
 
 # Features
 ## Existing Features
