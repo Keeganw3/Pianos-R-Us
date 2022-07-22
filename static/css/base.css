@@ -1,3 +1,20 @@
 body {
-    background-color: blue;
+    background-color: #85C7DE;
+}
+
+.hero-text {
+    margin-top: 30%;
+    font-size: 20px;
+}
+
+/* Navbar */
+
+header, li {
+    text-decoration: none;
+    color: black;
+    background-color: white;
+}
+
+i {
+    color: black;
 }
