@@ -15,6 +15,16 @@ header, li {
     background-color: white;
 }
 
-i {
+.icon {
+    align-items: center;
+}
+
+.btn-black {
+    background-color: white;
     color: black;
+}
+
+.btn-black:hover {
+    background-color: black;
+    color: white;    
 }
