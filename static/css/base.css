@@ -19,6 +19,10 @@ header, li {
     align-items: center;
 }
 
+.icons:hover {
+    color: #85C7DE;
+}
+
 .btn-black {
     background-color: white;
     color: black;
@@ -27,4 +31,8 @@ header, li {
 .btn-black:hover {
     background-color: black;
     color: white;    
+}
+
+.text-black {
+    color: black;
 }
