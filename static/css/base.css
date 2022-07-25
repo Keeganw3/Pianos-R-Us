@@ -2,6 +2,14 @@ body {
     background-color: #85C7DE;
 }
 
+.hero-image {
+    margin-top: 12%;
+    background: url("/media/images/pianos-r-us-hero-image.jpg") no-repeat center center;
+    background-size: cover;
+    width: 70vw;
+    height: 80vh;
+}
+
 .hero-text {
     margin-top: 30%;
     font-size: 20px;
