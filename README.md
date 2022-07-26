@@ -73,7 +73,7 @@ Users can order one item or multiple items and place them into a cart to be boug
 ### Keywords and descriptions
 A range of words were brainstormed and chosen relating to pianos and music along with words that a user may tangentially use when looking these up. This included short-tail keywords and long-tail phrases to attract large and relevant numbers of potential customers to the website.
 
-The words and phrases included were: piano store, piano shop, electronic piano, thomann dp 95, electronic keyboards, 61 key electronic keyboard, wurlitzer electric piano, best electronic keyboard for beginners, bastien piano basics, piano songbook, piano book, piano classics, teach yourself piano, piano books for beginners, piano stool, piano benches.
+The words and phrases chosen were: piano store, piano shop, electronic piano, thomann dp 95, electronic keyboards, 61 key electronic keyboard, wurlitzer electric piano, best electronic keyboard for beginners, bastien piano basics, piano songbook, piano book, piano classics, teach yourself piano, piano books for beginners, piano stool, piano benches.
 
 The relevancy and authoritativeness of these phrases were chosen by manually looking them up on google and seeing their search traffic combined with using wordtracker.com to check the volume of the web searches and competitiveness.
 
@@ -281,7 +281,7 @@ This app was deployed using Heroku.
 
 # Acknowledgements
 ## Credits (Edit this)
-* Most of the code and issues were heavily influenced by the information on the "I Think Therefore I Blog" walkthrough project from Code Institute.
+* Most of the code and issues were heavily influenced by the information on the "Boutique Ado" walkthrough project from Code Institute.
 * Pagination boilerplate was used in this project. It was found from it being mentioned in the CI project above.
 * This youtube video that was used to give me a better understanding of Entity Relationship Diagrams, https://www.youtube.com/watch?v=-CuY5ADwn24.
 * Another youtube video that helped improve my understanding of views and linking them up to urls, https://www.youtube.com/watch?v=TblSa29DX6I.
@@ -294,6 +294,6 @@ This app was deployed using Heroku.
 * The placeholder text and image used in Post 1 about Halo were taken from 
 
 ## Media
-* Placeholder image came from 
+* Hero Image came from https://media.gettyimages.com/photos/man-plays-the-piano-picture-id156996195?s=612x612
 * Post 1's image came from 
 * Post 2's image came from 

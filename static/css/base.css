@@ -44,3 +44,14 @@ header, li {
 .text-black {
     color: black;
 }
+
+/* Landing page */
+
+.landing-headings {
+    text-align: center;
+}
+
+.landing-text {
+    text-align: center;
+}
+
