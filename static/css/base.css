@@ -32,13 +32,13 @@ header, li {
 }
 
 .btn-black {
-    background-color: white;
-    color: black;
+    background-color: black;
+    color: white;
 }
 
 .btn-black:hover {
-    background-color: black;
-    color: white;    
+    background-color: white;
+    color: black;    
 }
 
 .text-black {
@@ -46,6 +46,13 @@ header, li {
 }
 
 /* Landing page */
+
+.shop-btn {
+    margin-left: 15%;
+    background: black;
+    color: white;
+    min-width: 230px;
+}
 
 .landing-headings {
     text-align: center;
