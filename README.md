@@ -10,7 +10,7 @@ Users can order one item or multiple items and place them into a cart to be boug
 # Features
 ## Existing Features
 ## Navigation Bar
-* The navigation bar is provided at the top of the webpage to allow the user to easily explore the website and maintains a consistent look on across the website. The navbar contains links to the home, log-in, and registration pages when a user is not logged in. If a user is logged in a link for logging out replaces these links and if the user is an admin they get the option to create a post.
+* The navigation bar is provided at the top of the webpage to allow the user to easily explore the website. It also maintains a consistent look on across the website. The navbar lets the user find the products they're looking for by providing categories which can be further refined through filtering on the product page. They can also return to the home page through the site logo, and access their cart and account functionalities if they're signed in by clicking on the appropriate icons. If they're not signed in they will be shown links to sign in or register for an account instead.
 
 ![Navbar Logged Out](/static/images/pp4-navbar-screenshot1.png)
 
@@ -18,8 +18,8 @@ Users can order one item or multiple items and place them into a cart to be boug
 
 ![Navbar Logged In(Admin)](/static/images/pp4-navbar-screenshot3.png)
 
-## Hero Image and Text
-* The hero image has text overlayed on top of it to clearly give the user an immediate idea of the site's purpose.
+## Landing Page
+* The landing page contains a hero image and hero text so that the user can intuitively understand what the app is selling and the goal of the company. There is also a shop now button if the user wants to go straight to the products or they can scroll down to get more information on what the app has to offer.
 
 ![Hero Image](/static/images/pp4-hero-image-screenshot.png)
 
