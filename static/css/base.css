@@ -42,6 +42,7 @@ header, li {
 }
 
 .text-black {
+    text-decoration: none;
     color: black;
 }
 
