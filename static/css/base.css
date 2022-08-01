@@ -46,6 +46,10 @@ header, li {
     color: black;
 }
 
+.nav-spacing {
+    margin-top: 15%;
+}
+
 /* Landing page */
 
 .shop-btn {
