@@ -291,9 +291,24 @@ This app was deployed using Heroku.
 * Bootstrap for the media query sizes that I used: https://getbootstrap.com/docs/4.1/layout/overview/
 
 ## Content
-* The placeholder text and image used in Post 1 about Halo were taken from 
+* The name, description and price for the wurlizter was taken from https://reverb.com/item/51972008-wurlitzer-200a-electric-piano-1970s-black?bk=eyJhbGciOiJIUzI1NiJ9.eyJqdGkiOiJkNzA3MTM3Yy1mY2IzLTRkY2ItOGEzNS1hYmNjY2I3NmI3MjUiLCJpYXQiOjE2NTkzMDY2MDQsInVzZXJfaWQiOiIiLCJzZXNzaW9uX2lkIjoiIiwiY29va2llX2lkIjoiMjQxY2I1MmItNmQ1Zi00YTgwLTk4OGMtZmZjMzM3OWE0M2IyIiwicHJvZHVjdF9pZCI6IjUxOTcyMDA4Iiwic291cmNlIjoiTk9ORSJ9.4Di4E8R3fcYIBAobeneTxocOqhIR5b4s5nYk7V6lM_U
+* The name, description and price for the Thomann DP-95 B was taken from https://www.thomann.de/ie/thomann_dp_95_b.htm
+* The name, description and price for the Thomann DP-95 WH was taken from https://www.thomann.de/ie/thomann_dp_95_wh.htm
+* The name, description and price for the Startone MK-400 was taken from https://www.thomann.de/ie/startone_mk_400.htm
+* The name, description and price for the Thomann SP-5600 was taken from https://www.thomann.de/ie/thomann_sp_5600.htm
+* The name, description and price for the Adjustable Keyboard / Piano Bench was taken from https://www.gear4music.ie/Keyboards-and-Pianos/Adjustable-Keyboard---Piano-Bench-by-Gear4music/8XQ?origin=product-ads&gclid=Cj0KCQjw0JiXBhCFARIsAOSAKqBRwUPbh-ZzOsHSpWUVCCy29czTLcon-TpYm-BdLxVTIrqh1BgQfX8aAqapEALw_wcB
+* The name, description and price for Piano Time 1 was taken from https://www.amazon.co.uk/Piano-Time-1-Bk/dp/0193727846/ref=asc_df_0193727846/?tag=googshopuk-21&linkCode=df0&hvadid=310081590442&hvpos=&hvnetw=g&hvrand=15863075280230236291&hvpone=&hvptwo=&hvqmt=&hvdev=c&hvdvcmdl=&hvlocint=&hvlocphy=1007850&hvtargid=pla-525138499170&psc=1&th=1&psc=1
+* The name, description and price for the 65 Famous Pieces of Classical Music for Solo Piano Volume II was taken from https://www.amazon.com/dp/B09TWVDCMZ/ref=sspa_dk_detail_2?psc=1&pd_rd_i=B09TWVDCMZ&pd_rd_w=e0NPT&content-id=amzn1.sym.3be1c5b9-5b41-4830-a902-fa8556c19eb5&pf_rd_p=3be1c5b9-5b41-4830-a902-fa8556c19eb5&pf_rd_r=5C0MD8ADE4XZ393WM8BR&pd_rd_wg=CQdZu&pd_rd_r=44c5a3ba-0fb8-4480-a71b-6923c6fe201e&s=books&sp_csd=d2lkZ2V0TmFtZT1zcF9kZXRhaWw&spLa=ZW5jcnlwdGVkUXVhbGlmaWVyPUEyUkU1MkxITzVTMkdWJmVuY3J5cHRlZElkPUEwMzQwNDk0MVdGQTVZTE5YM1JYJmVuY3J5cHRlZEFkSWQ9QTA2NjMwNjgyN1MzQVlSN0tEUjlYJndpZGdldE5hbWU9c3BfZGV0YWlsJmFjdGlvbj1jbGlja1JlZGlyZWN0JmRvTm90TG9nQ2xpY2s9dHJ1ZQ==
+* The name, description and price for the Classical Piano Sheet Music | 60 Famous Solos  was taken from https://www.amazon.com/dp/B09XDKH164/ref=sspa_dk_detail_1?psc=1&pd_rd_i=B09XDKH164&pd_rd_w=e0NPT&content-id=amzn1.sym.3be1c5b9-5b41-4830-a902-fa8556c19eb5&pf_rd_p=3be1c5b9-5b41-4830-a902-fa8556c19eb5&pf_rd_r=5C0MD8ADE4XZ393WM8BR&pd_rd_wg=CQdZu&pd_rd_r=44c5a3ba-0fb8-4480-a71b-6923c6fe201e&s=books&sp_csd=d2lkZ2V0TmFtZT1zcF9kZXRhaWw&spLa=ZW5jcnlwdGVkUXVhbGlmaWVyPUEyUkU1MkxITzVTMkdWJmVuY3J5cHRlZElkPUEwMzQwNDk0MVdGQTVZTE5YM1JYJmVuY3J5cHRlZEFkSWQ9QTA0MDQ5NDAxWDZWU0o2MklUVDBPJndpZGdldE5hbWU9c3BfZGV0YWlsJmFjdGlvbj1jbGlja1JlZGlyZWN0JmRvTm90TG9nQ2xpY2s9dHJ1ZQ==
 
 ## Media
-* Hero Image came from https://media.gettyimages.com/photos/man-plays-the-piano-picture-id156996195?s=612x612
-* Post 1's image came from 
-* Post 2's image came from 
+* The hero image came from https://media.gettyimages.com/photos/man-plays-the-piano-picture-id156996195?s=612x612
+* The Wurlizter image came from https://soundgas.com/wp-content/uploads/2020/12/Wurlitzer-Model-200-Electric-Piano-SN72352L-Cover-2.jpg
+* The Thomann DP-95 B image came from https://a.storyblok.com/f/49568/3604x3420/a500c85994/002_neu.jpg/m/1600x0/filters:quality(80):format(jpeg)
+* The Thomann DP-95 WH image came from https://a.storyblok.com/f/49568/3378x3194/5109b71e0b/002.jpg/m/1600x0/filters:quality(80):format(jpeg)
+* The Startone MK-400 image came from https://thumbs.static-thomann.de/thumb/padthumb600x600/pics/bdb/515755/16770214_800.jpg
+* The Thomann SP-5600 image came from https://a.storyblok.com/f/49568/8130x2027/3fa10b8e4e/tps_fo1_378054_001.jpg/m/1600x0/filters:quality(80):format(jpeg)
+* The Adjustable Keyboard / Piano Bench image came from https://d1aeri3ty3izns.cloudfront.net/media/43/435426/76/preview.jpg
+* The Piano Time 1 image came from https://images-na.ssl-images-amazon.com/images/I/51SgFovOecL._AC_SX60_CR,0,0,60,60_.jpg
+* The music masterpiece image came from https://images-na.ssl-images-amazon.com/images/I/41B9b+GuARL._AC_SX60_CR,0,0,60,60_.jpg
+* The classical piano book image came from https://images-na.ssl-images-amazon.com/images/I/41C3WbeVgzL._AC_SX60_CR,0,0,60,60_.jpg
