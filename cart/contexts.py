@@ -1,14 +1,14 @@
 from decimal import Decimal
 from django.conf import settings
 
-def bag_contents(request):
+def cart_contexts(request):
 
-    bag_items = []
+    cart_items = []
     total = 0
     product_count = 0
 
     context = {
-        'bag_items': bag_items,
+        'cart_items': cart_items,
         'total': total,
         'product_count': product_count,
     }
