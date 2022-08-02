@@ -1,7 +1,7 @@
 from django.shortcuts import render, get_object_or_404
 from django.contrib import messages
 from django.db.models import Q
-from .models import Product
+from .models import Product, Category
 
 # Create your views here.
 
@@ -10,8 +10,14 @@ def product_display(request):
 
     products = Product.objects.all()
     query = None
+    categories = None
 
     if request.GET:
+        if 'category' in request.GET:
+            categories = request.GET['category'].split(',')
+            products = products.filter(category__name__in=categories)
+            categories = Category.objects.filter(name__in=categories)
+
         if 'search' in request.GET:
             query = request.GET['search']
             if not query:
@@ -24,6 +30,7 @@ def product_display(request):
     context = {
         'products': products,
         'search_result': query,
+        'categories': categories,
     }
 
     return render(request, 'products/products.html', context)

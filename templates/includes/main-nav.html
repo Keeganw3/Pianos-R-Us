@@ -19,11 +19,11 @@
         <div class="dropdown-menu">
           <a class="dropdown-item" href="#">By Best Rated</a>
           <div class="dropdown-divider"></div>
-          <a class="dropdown-item" href="#">Only Pianos</a>
+          <a class="dropdown-item" href="{% url 'products' %}?category=pianos">Only Pianos</a>
           <div class="dropdown-divider"></div>
-          <a class="dropdown-item" href="#">Only Keyboards</a>
+          <a class="dropdown-item" href="{% url 'products' %}?category=keyboards">Only Keyboards</a>
           <div class="dropdown-divider"></div>
-          <a class="dropdown-item" href="#">All Pianos/Keyboards</a>
+          <a class="dropdown-item" href="{% url 'products' %}?category=pianos,keyboards">All Pianos/Keyboards</a>
         </div>
       </li>
       <li class="nav-item dropdown">
@@ -34,20 +34,20 @@
           <div class="dropdown-divider"></div>
           <a class="dropdown-item" href="#">By Latest</a>
           <div class="dropdown-divider"></div>
-          <a class="dropdown-item" href="#">All Piano Stools</a>
+          <a class="dropdown-item" href="{% url 'products' %}?category=piano_stools">All Piano Stools</a>
         </div>
       </li>
       <li class="nav-item dropdown">
         <a class="nav-link" href="#" role="button" 
         data-toggle="dropdown" aria-expanded="false"><h6>All Music Books</h6></a>
         <div class="dropdown-menu">
-          <a class="dropdown-item" href="#">By Beginner</a>
+          <a class="dropdown-item" href="{% url 'products' %}?category=beginner_books">By Beginner</a>
           <div class="dropdown-divider"></div>
-          <a class="dropdown-item" href="#">By Intermediate</a>
+          <a class="dropdown-item" href="{% url 'products' %}?category=intermediate_books">By Intermediate</a>
           <div class="dropdown-divider"></div>
-          <a class="dropdown-item" href="#">By Advanced</a>
+          <a class="dropdown-item" href="{% url 'products' %}?category=advanced_books">By Advanced</a>
           <div class="dropdown-divider"></div>
-          <a class="dropdown-item" href="#">All Music Books</a>
+          <a class="dropdown-item" href="{% url 'products' %}?category=music_books">All Music Books</a>
         </div>
       </li>
     </ul>
