@@ -4,9 +4,9 @@
         <a class="nav-link text-black" href="#" role="button" 
         data-toggle="dropdown" aria-expanded="false"><h6>All Products</h6></a>
         <div class="dropdown-menu">
-          <a class="dropdown-item" href="#">By Price</a>
+          <a class="dropdown-item" href="{% url 'products' %}?sort=price&direction=asc">By Price</a>
           <div class="dropdown-divider"></div>
-          <a class="dropdown-item" href="#">By Best Rated</a>
+          <a class="dropdown-item" href="{% url 'products' %}?sort=rating&direction=asc">By Best Rated</a>
           <div class="dropdown-divider"></div>
           <a class="dropdown-item" href="#">By Latest</a>
           <div class="dropdown-divider"></div>
@@ -17,7 +17,7 @@
         <a class="nav-link nav-border" href="#" role="button" 
         data-toggle="dropdown" aria-expanded="false"><h6>Pianos/Keyboards</h6></a>
         <div class="dropdown-menu">
-          <a class="dropdown-item" href="#">By Best Rated</a>
+          <a class="dropdown-item" href="{% url 'products' %}?category=pianos,keyboards">By Best Rated</a>
           <div class="dropdown-divider"></div>
           <a class="dropdown-item" href="{% url 'products' %}?category=pianos">Only Pianos</a>
           <div class="dropdown-divider"></div>
