@@ -33,9 +33,8 @@ If the user clicks the image of the product on the products page they will be br
 
 ![Post's Stories(Text)](/static/images/pp4-posts-stories-screenshot1.png)
 
-## Commenting on Posts
-* A comment section is displayed underneath the post so people can share their thoughts.
-* Users with accounts can comment on posts once an admin has approved the comment. Admins are also able to delete comments in case they change their minds.
+## Product Management
+An admin is able to add, remove, and edit products as it is required. In order to add a product it must have a name, image and description. The option to remove and edit a product is shown to an admin on the products page with two buttons underneath the product's image as shown in the screenshot below.
 
 ![Post's Stories(Comments)](static/images/pp4-post-stories-screenshot2.png)
 
@@ -43,8 +42,8 @@ If the user clicks the image of the product on the products page they will be br
 
 ![Comment's Alert](static/images/pp4-comment-alert.png)
 
-## Post Creater
-* This page allows admins to upload posts to the website which requires a title, the post's text and an excerpt. (The slug can be made by the user otherwise it will be automatically generated.)
+## Cart
+When a user wants to buy several products at once they can use the cart. This keeps track of all the items the user has requested along with the amount, the cost per item and the total cost.
 
 ![Post Creater](static/images/pp4-post-creation.png)
 
