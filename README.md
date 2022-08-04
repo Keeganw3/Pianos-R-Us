@@ -51,7 +51,7 @@ When a user wants to buy several products at once they can use the cart. This ke
 When a user buys one or multiple items they are taken to the checkout page where they're delivery and payment card information are required. The payment system has been securely set up using Stripe and several webhooks to notify the user if a problem occurs. (Webhooks could be separate feature). When the user successfully places an order they receive a notification and an email confirmation.
 
 ## On-screen Notifications
-Notifications are shown to the user each time they add, remove or edit an item in their cart. This also happens if there is ever any problem that occurs while the user is checking out to ensure that the user knows if their purchase get through or not. 
+Notifications are shown to the user each time they add, remove or edit an item in their cart. This also happens if there is ever any problem that occurs while the user is checking out to ensure that the user knows if their purchase get through or not.
 
 ## Account Registration
 ### Registration Page
@@ -68,6 +68,18 @@ Notifications are shown to the user each time they add, remove or edit an item i
 * The logout page will ask the user if they are certain that they would like to log out and they must press a button to confirm this.
 
 ![Logout page](static/images/pp4-logout-page.png)
+
+## User Account
+A user can make an account at anytime using the navbar. If a user does create an account this allows them to save their delivery information so they don't need to enter it everytime they checkout. They are also given a purchase history so they can see what they bought from the site and when. An account user can also leaves reviews.
+
+## Reviews
+An account holder can leave reviews on the bottom of a product's detail page to tell people what they think of a product, how well it works and of it is worth the price. 
+
+## Team page
+All members of the team are shown here with their names, pics, brief backgrounds and their positions within the online shopping network.
+
+## Site Locations
+The locations of our 5 stores are shown here in case a user would like to visit a store in person instead. They are shown using google maps, their address, name, and country.
 
 ## Footer
 * The footer is used to add authenticity to the website and to let people know that this is strictly for educational use only.
