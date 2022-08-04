@@ -47,6 +47,12 @@ When a user wants to buy several products at once they can use the cart. This ke
 
 ![Post Creater](static/images/pp4-post-creation.png)
 
+## Checkout
+When a user buys one or multiple items they are taken to the checkout page where they're delivery and payment card information are required. The payment system has been securely set up using Stripe and several webhooks to notify the user if a problem occurs. (Webhooks could be separate feature). When the user successfully places an order they receive a notification and an email confirmation.
+
+## On-screen Notifications
+Notifications are shown to the user each time they add, remove or edit an item in their cart. This also happens if there is ever any problem that occurs while the user is checking out to ensure that the user knows if their purchase get through or not. 
+
 ## Account Registration
 ### Registration Page
 * This application allows the user to create an account to log in and access additional features on the app. When registering the webpage will ask for a username (that doesn't already exist), an optional email, a password, and the password a second time to confirm it. The webpage will detect the strength of the password entered to make sure it isn't too small or easy to figure out.
