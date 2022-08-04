@@ -23,13 +23,13 @@ Users can order one item or multiple items and place them into a cart to be boug
 
 ![Hero Image](/static/images/pp4-hero-image-screenshot.png)
 
-## Card Posts
-* Posts are displayed to the user underneath the hero image in cards. These cards show the post's hero image, the headline, the author, and the text in the post. This lets the user quickly decide whether or not this is a post they would like to click on.
+## Products page
+All items in the store are displayed here with their images, names, prices, rating and categories. A user can use the navbar and sort function to filter through the products.
 
 ![Card Posts](/static/images/pp4-card-post-screenshot.png)
 
-## Post's Stories
-* When a user clicks on a card post they are sent to a page with the hero image and headline at the top and the body of text about the post below with the author similar to the card post. An admin must approve a post in order for it to appear on the website.
+## Product_view Page
+If the user clicks the image of the product on the products page they will be brought to the product details page where the product description along with the other product's relevant information is shown. The user can buy the item on its own or add it to a cart to purchase multiple products.
 
 ![Post's Stories(Text)](/static/images/pp4-posts-stories-screenshot1.png)
 
