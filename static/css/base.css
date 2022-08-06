@@ -23,8 +23,9 @@ header, li {
     background-color: white;
 }
 
-.icon {
+.icons {
     align-items: center;
+    color:black;
 }
 
 .icons:hover {
