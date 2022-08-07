@@ -1,0 +1,18 @@
+from django.db.models.signals import post_save, post_delete
+from django.dispatch import receiver
+
+from .models import LineItems
+
+@receiver(post_save, sender=LineItems)
+def update_on_save(sender, instance, created, **kwargs):
+    """
+    Update order total when a lineitem is updated or created
+    """
+    instance.order.update_total()
+
+@receiver(post_delete, sender=LineItems)
+def update_on_save(sender, instance, **kwargs):
+    """
+    Update order total when a lineitem is deleted
+    """
+    instance.order.update_total()
