@@ -8,7 +8,7 @@ def cart_view(request):
     return render(request, 'cart/cart.html')
 
 def add_to_cart(request, item_id):
-    """ A view that renders allows cart items to be incremented or decremented """
+    """ A view that renders allows cart items to be increased or decreased """
 
     quantity = int(request.POST.get('quantity'))
     redirect_url = request.POST.get('redirect_url')
@@ -21,5 +21,3 @@ def add_to_cart(request, item_id):
 
     request.session['cart'] = cart
     return redirect(redirect_url)
-
-    return render(request, 'cart/cart.html')
