@@ -46,8 +46,8 @@
                                         <div class="form-group">
                                             <div class="input-group">
                                                 <div class="input-group-prepend">
-                                                    <button class="decrement-qty btn btn-sm btn-black rounded-0" 
-                                                        data-item_id="{{ item.item_id }}" id="decrement-qty_{{ item.item_id }}">
+                                                    <button class="decrease-qty btn btn-sm btn-black rounded-0" 
+                                                        data-item_id="{{ item.item_id }}" id="decrease-qty_{{ item.item_id }}">
                                                         <span>
                                                             <i class="fas fa-minus fa-sm"></i>
                                                         </span>
@@ -58,8 +58,8 @@
                                                     data-item_id="{{ item.item_id }}"
                                                     id="id_qty_{{ item.item_id }}">
                                                 <div class="input-group-append">
-                                                    <button class="increment-qty btn btn-sm btn-black rounded-0"
-                                                        data-item_id="{{ item.item_id }}" id="increment-qty_{{ item.item_id }}">
+                                                    <button class="increase-qty btn btn-sm btn-black rounded-0"
+                                                        data-item_id="{{ item.item_id }}" id="increase-qty_{{ item.item_id }}">
                                                         <span>
                                                             <i class="fas fa-plus fa-sm"></i>
                                                         </span>
@@ -122,7 +122,7 @@
     $('.remove-item').click(function(e) {
         var csrfToken = "{{ csrf_token }}";
         var itemId = $(this).attr('id').split('remove_')[1];
-        var url = `/bag/remove/${itemId}/`;
+        var url = `/cart/remove/${itemId}/`;
         var data = {'csrfmiddlewaretoken': csrfToken,};
         $.post(url, data)
          .done(function() {

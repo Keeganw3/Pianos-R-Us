@@ -83,3 +83,8 @@ a.category-badge > span.badge:hover {
     background: #212529 !important;
     color: #fff !important;
 }
+
+/* Product_view */
+.quantity-btn {
+    border-radius: 50%;
+}
