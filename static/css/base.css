@@ -15,6 +15,11 @@ body {
     font-size: 20px;
 }
 
+.update-link,
+.remove-item {
+    cursor: pointer;
+}
+
 /* Navbar */
 
 header, li {
@@ -84,7 +89,8 @@ a.category-badge > span.badge:hover {
     color: #fff !important;
 }
 
-/* Product_view */
+/* Product_view Page*/
+
 .quantity-btn {
     border-radius: 50%;
 }
