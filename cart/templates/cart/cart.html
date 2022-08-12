@@ -70,12 +70,12 @@
                                     <a class="remove-item text-danger float-right" id="remove_{{ item.item_id }}"><small>Remove</small></a>
                                     </td>
                                     <td class="py-3">
-                                        <p class="my-0"><strong>Subtotal:</strong> €{{ item.product.price | calc_subtotal:item.quantity }}</p>
+                                        <p class="my-0 text-black"><strong>Subtotal:</strong> €{{ item.product.price | calc_subtotal:item.quantity }}</p>
                                     </td>
                                 </tr>
                             {% endfor %}
                             <tr>
-                                <td colspan="5" class="pt-5 text-right">
+                                <td colspan="5" class="pt-5 text-right text-black">
                                     <h5><strong>Cart Total: €{{ order_total_cost|floatformat:2 }}</strong></h5>
                                 </td>
                             </tr>
