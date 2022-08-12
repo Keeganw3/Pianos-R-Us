@@ -22,7 +22,7 @@ def cart_contexts(request):
 
     context = {
         'cart_items': cart_items,
-        'total': total,
+        'order_total_cost': total,
         'product_count': product_count,
     }
 
