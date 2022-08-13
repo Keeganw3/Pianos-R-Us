@@ -1,20 +1,41 @@
 from django.shortcuts import render, redirect, reverse
 from django.contrib import messages
-from .forms import CheckoutForm
+from django.conf import settings	
 
+from .forms import CheckoutForm	
+from cart.contexts import cart_contexts	
 
-def checkout(request):
-    cart = request.session.get('cart', {})
-    if not cart:
-        messages.error(request, "There's nothing in your cart at the moment")
+import stripe	
+
+def checkout(request):	
+    stripe_public_key = settings.STRIPE_PUBLIC_KEY	
+    stripe_secret_key = settings.STRIPE_SECRET_KEY	
+    
+
+    cart = request.session.get('cart', {})	
+    if not cart:	
+        messages.error(request, "There's nothing in your cart right now")	
         return redirect(reverse('products'))
+
+    current_cart = cart_contexts(request)	
+    total = current_cart['order_total_cost']	
+    stripe_total = round(total * 100)	
+    stripe.api_key = stripe_secret_key	
+    intent = stripe.PaymentIntent.create(	
+        amount=stripe_total,	
+        currency=settings.STRIPE_CURRENCY,	
+    )	
+    checkout_form = CheckoutForm()	
+    
+    if not stripe_public_key:	
+        messages.warning(request, 'Stripe public key is missing. Did you forget to set it in your environment?')
 
     checkout_form = CheckoutForm()
     template = 'checkout/checkout.html'
     context = {
         'checkout_form': checkout_form,
-        'stripe_public_key': 'pk_test_51LK40UI31Ly6KbPUKCD8jZOxuCk5Eqjr84wqz8ZFIMWVl61Chv7Mo8kDXjy3cCSO7nKlWs1btlOmnHiiE4ecFkT200mTgPy9RO',
-        'client_secret': 'test client secret',
+	    'stripe_public_key': stripe_public_key,	
+        'client_secret': intent.client_secret,
     }
 
     return render(request, template, context)
