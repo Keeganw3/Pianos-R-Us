@@ -48,7 +48,7 @@ def checkout(request):
                     order.delete()
                     return redirect(reverse('view_cart'))
             request.session['save_info'] = 'save-info' in request.POST
-            return redirect(reverse('checkout_success', args=[order.order_number]))
+            return redirect(reverse('checkout_success', args=[order.order_id]))
         else:
             messages.error(request, 'There was an error with your form. \ Please double check your information.')
     else:
@@ -80,13 +80,13 @@ def checkout(request):
     return render(request, template, context)
 	
 
-def checkout_success(request, order_number):
+def checkout_success(request, order_id):
     """
     Emails the customer after a successful checkout
     """
     save_info = request.session.get('save_info')
-    order = get_object_or_404(Checkout, order_number=order_number)
-    messages.success(request, f'Order successfully processed! \ Your order number is {order_number}. A confirmation \ email will be sent to {order.email_address}.')
+    order = get_object_or_404(Checkout, order_id=order_id)
+    messages.success(request, f'Order successfully processed! \ Your order number is {order_id}. A confirmation \ email will be sent to {order.email_address}.')
     if 'cart' in request.session:
         del request.session['cart']
     template = 'checkout/checkout_success.html'

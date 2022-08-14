@@ -29,6 +29,17 @@ class Checkout(models.Model):
         """
         return uuid.uuid4().hex.upper()
 
+    def update_total(self):
+        """
+        Update grand total each time a line item is added,
+        accounting for delivery costs.
+        """
+        self.order_total = self.lineitems.aggregate(
+            Sum('lineitem_total'))['lineitem_total__sum'] or 0
+        self.grand_total = self.order_total + self.delivery_cost
+        self.save()
+
+
     def save(self, *args, **kwargs):
         """
         Overwrites the original save method for setting an order 
@@ -58,4 +69,4 @@ class LineItems(models.Model):
         super().save(*args, **kwargs)
 
     def __str__(self):
-        return f'SKU {self.product.sku} on order {self.order.order_id}'
+        return f'SKU {self.product.sku} on order {self.checkout.order_id}'
