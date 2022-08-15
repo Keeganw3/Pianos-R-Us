@@ -33,7 +33,7 @@ def checkout(request):
     stripe_secret_key = settings.STRIPE_SECRET_KEY
 
     if request.method == 'POST':
-        bag = request.session.get('bag', {})
+        cart = request.session.get('cart', {})
         form_data = {
             'full_name': request.POST['full_name'],
             'email_address': request.POST['email_address'],
@@ -48,7 +48,11 @@ def checkout(request):
         checkout_form = CheckoutForm(form_data)	
         if checkout_form.is_valid():
             order = checkout_form.save()
-            for item_id, item_data in bag.items():
+            pid = request.POST.get('client_secret').split('_secret')[0]
+            order.stripe_pid = pid
+            order.original_cart = json.dumps(cart)
+            order.save()
+            for item_id, item_data in cart.items():
                 try:
                     product = Product.objects.get(id=item_id)
                     if isinstance(item_data, int):
@@ -61,7 +65,7 @@ def checkout(request):
         
                 except Product.DoesNotExist:
                     messages.error(request, (
-                        "One of the products in your bag couldn't be found in our database."
+                        "One of the products in your cart couldn't be found in our database."
                         "Email us for assistance!")
                     )
                     order.delete()

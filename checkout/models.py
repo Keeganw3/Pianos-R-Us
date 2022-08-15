@@ -22,6 +22,8 @@ class Checkout(models.Model):
     delivery_cost = models.DecimalField(max_digits=6, decimal_places=2, default=0, null=False)
     order_total_cost = models.DecimalField(max_digits=10, decimal_places=2, default=0, null=False)
     grand_total = models.DecimalField(max_digits=10, decimal_places=2, default=0, null=False)
+    original_cart = models.TextField(null=False, blank=False, default='')
+    stripe_pid = models.CharField(max_length=254, null=False, blank=False, default='')
 
     def _generate_order_id(self):
         """
