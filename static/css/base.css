@@ -100,3 +100,11 @@ a.category-badge > span.badge:hover {
 .allauth-spacing {
     margin-top: 25%;
 }
+
+.registration-spacing {
+    margin-left: 0%;
+}
+
+.registration-headers {
+
+}
