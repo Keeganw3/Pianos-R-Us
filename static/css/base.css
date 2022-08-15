@@ -94,3 +94,9 @@ a.category-badge > span.badge:hover {
 .quantity-btn {
     border-radius: 50%;
 }
+
+/* Allauth form formatting */
+
+.allauth-spacing {
+    margin-top: 25%;
+}

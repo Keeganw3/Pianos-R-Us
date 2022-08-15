@@ -8,7 +8,7 @@ from django_countries.fields import CountryField
 
 class UserAccount(models.Model):
     """
-    A user account model to save a users delivery 
+    A user account model to save a users delivery
     information and order history
     """
     user = models.OneToOneField(User, on_delete=models.CASCADE)
@@ -30,6 +30,6 @@ def create_or_update_user_account(sender, instance, created, **kwargs):
     A model to create or update the user account
     """
     if created:
-        UserProfile.objects.create(user=instance)
-    # Existing users: just save the profile
+        UserAccount.objects.create(user=instance)
+    # Existing users: just save the account
     instance.useraccount.save()

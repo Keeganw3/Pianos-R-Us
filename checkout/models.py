@@ -10,7 +10,7 @@ from products.models import Product
 from accounts.models import UserAccount
 
 class Checkout(models.Model):
-    order_number = models.CharField(max_length=32, null=False, editable=False)
+    order_id = models.CharField(max_length=32, null=False, editable=False)
     user_account = models.ForeignKey(UserAccount, on_delete=models.SET_NULL,
                                      null=True, blank=True, 
                                      related_name='orders')
