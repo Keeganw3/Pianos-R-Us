@@ -30,7 +30,7 @@ def account(request):
 
 
 def order_history(request, order_id):
-    order = get_object_or_404(Order, order_id=order_id)
+    order = get_object_or_404(Checkout, order_id=order_id)
 
     messages.info(request, (
         f'This is a past confirmation for order number {order_id}. '

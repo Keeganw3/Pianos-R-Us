@@ -1,20 +1,21 @@
+import json
+
 from django.shortcuts import (render, redirect, reverse,
-get_object_or_404, HttpResponse)
+                              get_object_or_404, HttpResponse)
 from django.views.decorators.http import require_POST
 from django.contrib import messages
 from django.conf import settings
 
-from .forms import CheckoutForm
-from .models import Checkout, LineItems
-
+import stripe
 
 from products.models import Product
 from accounts.models import UserAccount
 from accounts.forms import UserAccountForm
 from cart.contexts import cart_contexts
 
-import stripe
-import json
+from .forms import CheckoutForm
+from .models import Checkout, LineItems
+
 
 @require_POST
 def cache_checkout_data(request):
@@ -31,6 +32,7 @@ def cache_checkout_data(request):
         messages.error(request, "Sorry, your payment can't be \
             processed at the moment. Please try again later.")
         return HttpResponse(content=e, status=400)
+
 
 def checkout(request):
     stripe_public_key = settings.STRIPE_PUBLIC_KEY
@@ -62,27 +64,28 @@ def checkout(request):
                     product = Product.objects.get(id=item_id)
                     if isinstance(item_data, int):
                         line_items = LineItems(
-                            order=order,
+                            checkout=order,
                             product=product,
                             quantity=item_data,
                         )
                         line_items.save()
-        
+
                 except Product.DoesNotExist:
                     messages.error(request, (
-                        "One of the products in your cart couldn't be found in our database."
-                        "Email us for assistance!")
+                        "One of the products in your cart couldn't be found \
+                        in our database." "Email us for assistance!")
                     )
                     order.delete()
                     return redirect(reverse('view_cart'))
             request.session['save_info'] = 'save-info' in request.POST
             return redirect(reverse('checkout_success', args=[order.order_id]))
         else:
-            messages.error(request, 'There was an error with your form. \ Please double check your information.')
+            messages.error(request, 'There was an error with your form. \
+            Please double check your information.')
     else:
         cart = request.session.get('cart', {})
         if not cart:
-            messages.error(request, "There's nothing in your cart right now")	
+            messages.error(request, "There's nothing in your cart right now")
             return redirect(reverse('products'))
 
         current_cart = cart_contexts(request)
@@ -114,7 +117,8 @@ def checkout(request):
             checkout_form = CheckoutForm()
 
     if not stripe_public_key:
-        messages.warning(request, 'Stripe public key is missing. Did you forget to set it in your environment?')
+        messages.warning(request, 'Stripe public key is missing. Did you \
+        forget to set it in your environment?')
 
     template = 'checkout/checkout.html'
     context = {
@@ -131,7 +135,7 @@ def checkout_success(request, order_id):
     Handles successful checkouts
     """
     save_info = request.session.get('save_info')
-    order = get_object_or_404(Order, order_id=order_id)
+    order = get_object_or_404(Checkout, order_id=order_id)
 
     if request.user.is_authenticated:
         account = UserAccount.objects.get(user=request.user)

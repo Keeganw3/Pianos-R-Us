@@ -6,21 +6,22 @@ class LineItemAdminInline(admin.TabularInline):
     readonly_fields = ('lineitem_total',)
 
 class OrderAdmin(admin.ModelAdmin):
-    
+
     class Meta:
         verbose_name_plural = 'Checkout Orders'
 
     inlines = (LineItemAdminInline,)
 
-    readonly_fields = ('order_id', 'order_total_cost', 
+    readonly_fields = ('order_id', 'order_total_cost',
                        'checkout_date', 'original_cart',
                        'stripe_pid')
 
     fields = ('order_id', 'user_account' 'checkout_date', 'full_name',
               'email_address', 'phone_number', 'country',
               'postal_address', 'city', 'street_address_1',
-              'street_address_2', 'county', 'order_total_cost',
-              'original_cart', 'stripe_pid')
+              'street_address_2', 'county', 'lineitem_total',
+              'order_total_cost', 'original_cart', 
+              'stripe_pid')
 
     list_display = ('order_id', 'checkout_date', 'full_name',
                     'order_total_cost',)

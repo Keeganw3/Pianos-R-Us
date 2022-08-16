@@ -43,7 +43,7 @@ class Checkout(models.Model):
         accounting for delivery costs.
         """
         self.grand_total = self.lineitems.aggregate(
-            Sum('order_total_cost'))['lineitem_total'] or 0
+            Sum('lineitem_total'))['lineitem_total__sum'] or 0
         self.save()
 
 
