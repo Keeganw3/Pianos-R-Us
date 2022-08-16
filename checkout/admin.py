@@ -16,7 +16,7 @@ class OrderAdmin(admin.ModelAdmin):
                        'checkout_date', 'original_cart',
                        'stripe_pid')
 
-    fields = ('order_id', 'checkout_date', 'full_name',
+    fields = ('order_id', 'user_account' 'checkout_date', 'full_name',
               'email_address', 'phone_number', 'country',
               'postal_address', 'city', 'street_address_1',
               'street_address_2', 'county', 'order_total_cost',

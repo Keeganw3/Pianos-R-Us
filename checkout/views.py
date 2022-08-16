@@ -6,7 +6,11 @@ from django.conf import settings
 
 from .forms import CheckoutForm
 from .models import Checkout, LineItems
+
+
 from products.models import Product
+from accounts.models import UserAccount
+from accounts.forms import UserAccountForm
 from cart.contexts import cart_contexts
 
 import stripe
@@ -45,9 +49,10 @@ def checkout(request):
             'street_address_2': request.POST['street_address_2'],
             'county': request.POST['county'],
         }
-        checkout_form = CheckoutForm(form_data)	
+        checkout_form = CheckoutForm(form_data)
         if checkout_form.is_valid():
-            order = checkout_form.save()
+            order = checkout_form.save(commit=False)
+
             pid = request.POST.get('client_secret').split('_secret')[0]
             order.stripe_pid = pid
             order.original_cart = json.dumps(cart)
@@ -87,8 +92,26 @@ def checkout(request):
         intent = stripe.PaymentIntent.create(
             amount=stripe_total,
             currency=settings.STRIPE_CURRENCY,
-    )
-    checkout_form = CheckoutForm()
+        )
+
+        if request.user.is_authenticated:
+            try:
+                account = UserAccount.objects.get(user=request.user)
+                checkout_form = CheckoutForm(initial={
+                    'full_name': account.user.get_full_name(),
+                    'email': account.user.email,
+                    'phone_number': account.default_phone_number,
+                    'country': account.default_country,
+                    'postal_address': account.default_postal_address,
+                    'city': account.default_city,
+                    'street_address_1': account.default_street_address_1,
+                    'street_address_2': account.default_street_address_2,
+                    'county': account.default_county,
+                })
+            except UserAccount.DoesNotExist:
+                checkout_form = CheckoutForm()
+        else:
+            checkout_form = CheckoutForm()
 
     if not stripe_public_key:
         messages.warning(request, 'Stripe public key is missing. Did you forget to set it in your environment?')
@@ -101,19 +124,46 @@ def checkout(request):
     }
 
     return render(request, template, context)
-	
+
 
 def checkout_success(request, order_id):
     """
-    Emails the customer after a successful checkout
+    Handles successful checkouts
     """
     save_info = request.session.get('save_info')
-    order = get_object_or_404(Checkout, order_id=order_id)
-    messages.success(request, f'Order successfully processed! \ Your order number is {order_id}. A confirmation \ email will be sent to {order.email_address}.')
+    order = get_object_or_404(Order, order_id=order_id)
+
+    if request.user.is_authenticated:
+        account = UserAccount.objects.get(user=request.user)
+        # Attach the user's account to the order
+        order.user_account = account
+        order.save()
+
+        # Save the user's info
+        if save_info:
+            account_data = {
+                'default_phone_number': order.phone_number,
+                'default_country': order.country,
+                'default_postal_address': order.postal_address,
+                'default_city': order.city,
+                'default_street_address_1': order.street_address_1,
+                'default_street_address_2': order.street_address_2,
+                'default_county': order.county,
+            }
+            user_account_form = UserAccountForm(account_data, instance=account)
+            if user_account_form.is_valid():
+                user_account_form.save()
+
+    messages.success(request, f'Order successfully processed! \
+        Your order id is {order_id}. A confirmation \
+        email will be sent to {order.email_address}.')
+
     if 'cart' in request.session:
         del request.session['cart']
+
     template = 'checkout/checkout_success.html'
     context = {
         'order': order,
     }
+
     return render(request, template, context)
