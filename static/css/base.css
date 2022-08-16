@@ -98,5 +98,13 @@ a.category-badge > span.badge:hover {
 /* Allauth form formatting */
 
 .allauth-spacing {
-    margin-top: 25%;
+    margin-top: 27%;
+}
+
+.password-spacing {
+    margin-top: 10%;
+}
+
+.password-hoizontal-spacing {
+    margin-left: 5%;
 }
