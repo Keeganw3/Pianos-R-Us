@@ -19,7 +19,7 @@ class CategoryAdmin(admin.ModelAdmin):
     )
 
 
-@admin.register(Review)
+admin.site.register(Review)
 class ReviewAdmin(admin.ModelAdmin):
     list_display = ('name', 'body', 'product', 'date_created', 'approved')
     list_filter = ('approved', 'date_created')

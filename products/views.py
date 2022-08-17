@@ -5,7 +5,7 @@ from django.db.models import Q
 from django.db.models.functions import Lower
 
 from .models import Product, Category
-from .forms import ProductForm
+from .forms import ProductForm, ReviewForm
 
 # Create your views here.
 
@@ -66,6 +66,7 @@ def product_view(request, product_id):
 
     context = {
         'product': product,
+        'review_form': ReviewForm(),
     }
 
     return render(request, 'products/product_view.html', context)
