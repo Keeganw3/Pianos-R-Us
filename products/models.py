@@ -36,7 +36,7 @@ class Review(models.Model):
     email = models.EmailField()
     body = models.TextField(max_length=200)
     date_created = models.DateTimeField(auto_now_add=True)
-    approve_reviews = models.BooleanField(default=False)
+    approved_reviews = models.BooleanField(default=False)
 
     class Meta:
         ordering = ['-date_created']

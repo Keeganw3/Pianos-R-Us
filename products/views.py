@@ -63,19 +63,19 @@ def product_view(request, product_id):
     """ A view that provides all relevant information for the products """
 
     product = get_object_or_404(Product, pk=product_id)
+    review_form = ReviewForm()
 
     context = {
         'product': product,
+        "review_form": review_form,
     }
 
     return render(request, 'products/product_view.html', context)
 
-
-class Reviews(View):
     def get(self, request, slug, *args, **kwargs):
         queryset = Product.objects.get()
         product = get_object_or_404(queryset, slug=slug)
-        reviews = product.reviews.filter(approve_reviews=True).order_by(" \
+        reviews = product.reviews.filter(approved_reviews=True).order_by(" \
             -date_created")
 
         return render(
@@ -93,7 +93,7 @@ class Reviews(View):
 
         queryset = Product.objects
         product = get_object_or_404(queryset, slug=slug)
-        reviews = product.reviews.filter(approve_reviews=True).order_by(" \
+        reviews = product.reviews.filter(approved_reviews=True).order_by(" \
             -date_created")
 
         review_form = ReviewForm(data=request.POST)
