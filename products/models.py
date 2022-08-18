@@ -34,7 +34,7 @@ class Review(models.Model):
     product = models.ForeignKey(Product, on_delete=models.CASCADE, related_name='reviews')
     name = models.CharField(max_length=80)
     email = models.EmailField()
-    body = models.TextField(max_length=200)
+    review_text = models.TextField(max_length=200)
     date_created = models.DateTimeField(auto_now_add=True)
     approved_reviews = models.BooleanField(default=False)
 
@@ -42,4 +42,5 @@ class Review(models.Model):
         ordering = ['-date_created']
 
     def __str__(self):
-        return f"Review {self.body} by {self.name}"
+        return f"Review {self.review_text} by {self.name}"
+        

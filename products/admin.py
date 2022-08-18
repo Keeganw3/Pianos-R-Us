@@ -21,9 +21,9 @@ class CategoryAdmin(admin.ModelAdmin):
 
 admin.site.register(Review)
 class ReviewAdmin(admin.ModelAdmin):
-    list_display = ('name', 'body', 'product', 'date_created', 'approved_reviews')
+    list_display = ('name', 'review_text', 'product', 'date_created', 'approved_reviews')
     list_filter = ('approved_reviews', 'date_created')
-    search_fields = ('name', 'email', 'body')
+    search_fields = ('name', 'email', 'review_text')
     actions = ['approved_reviews']
 
     def approved_reviews(self, request, queryset):

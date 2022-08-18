@@ -65,6 +65,31 @@ def product_view(request, product_id):
     product = get_object_or_404(Product, pk=product_id)
     review_form = ReviewForm()
 
+    if request.method == 'POST':
+        review_form = ReviewForm(request.POST)
+        if request.method == "POST":
+            review_form = ReviewForm(request.POST)
+            if review_form.is_valid():
+                review = review_form.save(commit=False)
+                review.name = request.user.username
+                review.product = product
+                review_form.save()
+            
+            messages.success(request, "An admin may approve your review shortly.")
+            return render(
+                request,
+                "products/product_view.html",
+                {
+                    "product": product,
+                    "left_review": True,
+                    "review_form": review_form,
+                },
+            )
+        else:
+            messages.error(request,
+                           "There was an issue with the form. Please try again.")
+    else:
+        review_form = ReviewForm()
     context = {
         'product': product,
         "review_form": review_form,
