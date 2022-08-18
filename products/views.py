@@ -3,6 +3,7 @@ from django.contrib import messages
 from django.contrib.auth.decorators import login_required
 from django.db.models import Q
 from django.db.models.functions import Lower
+from django.views import View
 
 from .models import Product, Category
 from .forms import ProductForm, ReviewForm
@@ -66,10 +67,55 @@ def product_view(request, product_id):
 
     context = {
         'product': product,
-        'review_form': ReviewForm(),
     }
 
     return render(request, 'products/product_view.html', context)
+
+class Reviews(View):
+    def get(self, request, slug, *args, **kwargs):
+        queryset = Product.objects.get(name)
+        product = get_object_or_404(queryset, slug=slug)
+        reviews = product.reviews.filter(approve_reviews=True).order_by("-date_created")
+
+        return render(
+            request,
+            "products/product_view.html",
+            {
+                "product": product,
+                "reviews": reviews,
+                "left_review": False,
+                "review_form": ReviewForm()
+            },
+        )
+    
+    def post(self, request, slug, *args, **kwargs):
+
+        queryset = Product.objects
+        product = get_object_or_404(queryset, slug=slug)
+        reviews = product.reviews.filter(approve_reviews=True).order_by("-date_created")
+
+        review_form = ReviewForm(data=request.POST)
+        if review_form.is_valid():
+            review_form.instance.email = request.user.email_address
+            review_form.instance.name = request.user.username
+            review = review_form.save(commit=False)
+            review.product = product
+            review.save()
+        else:
+            review_form = ReviewForm()
+
+        return render(
+            request,
+            "products/product_view.html",
+            {
+                "product": product,
+                "reviews": reviews,
+                "left_review": True,
+                "review_form": review_form,
+            },
+        )
+
+    
 
 @login_required
 def add_product(request):

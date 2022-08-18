@@ -100,17 +100,49 @@
                     </form>
                 </div>
             </div>
-            {% if user.is_authenticated %}
-            <div class="card-post">
-            <h5>Want to leave a review?</h5>
-            <p>Reviewer: {{ user.username }}</p>
-            <form method="post" style="margin-top: 1.3em;" class="w-50 rounded-0">
-                {{ review_form | crispy }}
-                {% csrf_token %}
-                <button type="submit" class="btn btn-black btn-md">Submit</button>
-            </form>
-        </div>
-            {% endif %}
+            <div class="row">
+                <div class="col-md-8 card mb-4 mt-3">
+                    <h3>Reviews:</h3>
+                    <div class="card-body">
+                        <!-- We want a for loop inside the empty control tags to iterate through each comment in comments -->
+                        {% for review in reviews %}
+                        <div class="reviews" style="padding: 10px;">
+                            <p class="font-weight-bold">
+                                <!-- The commenter's name goes here. Check the model if you're not sure what that is -->
+                                {{ review.name }}
+                                <span class=" text-muted font-weight-normal">
+                                    <!-- The comment's created date goes here -->
+                                    {{ review.date_created }}
+                                </span> wrote:
+                            </p>
+                            <!-- The body of the comment goes before the | -->
+                            {{ review.body | linebreaks }}
+                        </div>
+                        <!-- Our for loop ends here -->
+                        {% endfor %}
+                    </div>
+                </div>
+                <div class="col-md-4 card mb-4 mt-3">
+                    <div class="card-body">
+                        <!-- For later -->
+                        {% if left_review %}
+                        <div class="alert alert-success" role="alert">
+                            Your review is awaiting approval
+                        </div>
+                        {% else %}
+                        {% if user.is_authenticated %}
+                        <h5>Want to leave a review?</h5>
+                        <p>Reviewer: {{ user.username }}</p>
+                        <form method="post" style="margin-top: 1.3em;" class="w-50 rounded-0">
+                            {{ review_form | crispy }}
+                            {% csrf_token %}
+                            <button type="submit" class="btn btn-black btn-md">Submit</button>
+                        </form>            
+                        {% endif %}
+                        {% endif %}
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
 {% endblock %}

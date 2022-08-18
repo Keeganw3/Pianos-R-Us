@@ -19,7 +19,7 @@ class Migration(migrations.Migration):
                 ('email', models.EmailField(max_length=254)),
                 ('body', models.TextField(max_length=200)),
                 ('date_created', models.DateTimeField(auto_now_add=True)),
-                ('approved', models.BooleanField(default=False)),
+                ('approve_reviews', models.BooleanField(default=False)),
                 ('product', models.ForeignKey(on_delete=django.db.models.deletion.CASCADE, related_name='reviews', to='products.product')),
             ],
             options={
