@@ -8,7 +8,6 @@ from django.views import View
 from .models import Product, Category
 from .forms import ProductForm, ReviewForm
 
-# Create your views here.
 
 def product_display(request):
     """ A view to show all products with filtering """
@@ -32,8 +31,8 @@ def product_display(request):
                 direction = request.GET['direction']
                 if direction == 'desc':
                     sortkey = f'-{sortkey}'
-            products = products.order_by(sortkey)        
-            
+            products = products.order_by(sortkey)
+
         if 'category' in request.GET:
             categories = request.GET['category'].split(',')
             products = products.filter(category__name__in=categories)
@@ -44,7 +43,7 @@ def product_display(request):
             if not query:
                 messages.error(request, "No search criteria was entered!")
                 return redirect(reverse('products'))
-            
+
             queries = Q(name__icontains=query) | Q(description__icontains=query)
             products = products.filter(queries)
 
@@ -71,11 +70,13 @@ def product_view(request, product_id):
 
     return render(request, 'products/product_view.html', context)
 
+
 class Reviews(View):
     def get(self, request, slug, *args, **kwargs):
-        queryset = Product.objects.get(name)
+        queryset = Product.objects.get()
         product = get_object_or_404(queryset, slug=slug)
-        reviews = product.reviews.filter(approve_reviews=True).order_by("-date_created")
+        reviews = product.reviews.filter(approve_reviews=True).order_by(" \
+            -date_created")
 
         return render(
             request,
@@ -87,12 +88,13 @@ class Reviews(View):
                 "review_form": ReviewForm()
             },
         )
-    
+
     def post(self, request, slug, *args, **kwargs):
 
         queryset = Product.objects
         product = get_object_or_404(queryset, slug=slug)
-        reviews = product.reviews.filter(approve_reviews=True).order_by("-date_created")
+        reviews = product.reviews.filter(approve_reviews=True).order_by(" \
+            -date_created")
 
         review_form = ReviewForm(data=request.POST)
         if review_form.is_valid():
@@ -115,7 +117,6 @@ class Reviews(View):
             },
         )
 
-    
 
 @login_required
 def add_product(request):
@@ -134,14 +135,15 @@ def add_product(request):
             messages.error(request, 'Failed to add product. \
             Please ensure the form is valid.')
     else:
-        form = ProductForm()    
-    
+        form = ProductForm()
+
     template = 'products/add_product.html'
     context = {
         'form': form,
     }
 
     return render(request, template, context)
+
 
 @login_required
 def edit_product(request, product_id):
@@ -171,6 +173,7 @@ def edit_product(request, product_id):
     }
 
     return render(request, template, context)
+
 
 @login_required
 def delete_product(request, product_id):
