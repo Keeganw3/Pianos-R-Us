@@ -63,6 +63,7 @@ def product_view(request, product_id):
     """ A view that provides all relevant information for the products """
 
     product = get_object_or_404(Product, pk=product_id)
+    reviews = product.reviews.filter(approved_reviews=True)
     review_form = ReviewForm()
 
     if request.method == 'POST':
@@ -81,6 +82,7 @@ def product_view(request, product_id):
                 "products/product_view.html",
                 {
                     "product": product,
+                    "reviews": reviews,
                     "left_review": True,
                     "review_form": review_form,
                 },
@@ -92,7 +94,9 @@ def product_view(request, product_id):
         review_form = ReviewForm()
     context = {
         'product': product,
+        "reviews": reviews,
         "review_form": review_form,
+
     }
 
     return render(request, 'products/product_view.html', context)
