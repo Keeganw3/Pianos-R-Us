@@ -1,0 +1,3 @@
+User-agent: *
+Disallow:
+Sitemap: https://pianos-r-us.herokuapp.com/sitemap.xml
