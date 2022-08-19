@@ -69,8 +69,13 @@
                 <li class="list-inline-item dropdown">
                     <a class="text-black nav-link icons" href="#" id="user-options" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                         <div class="text-center">
+                          {% if request.user.is_authenticated %}
                             <div><i class="fas fa-user fa-lg"></i></div>
                             <p class="my-0">My Account</p>
+                            {% else %}
+                            <div><i class="far fa-user fa-lg logged-out-icon"></i></div>
+                            <p class="my-0">My Account</p>
+                            {% endif %}
                         </div>
                     </a>
                     <div class="dropdown-menu border-0" aria-labelledby="user-options">
