@@ -1,7 +1,7 @@
 <h1 align="center">Pianos-R-Us</h1>
 
 (Include live link to project somewhere here)
-<p> Pianos-R-Us is a B2C commerce application that aims to sell pianos/keyboards and a music books to music lovers and learners alike. The goal of the website is to provide users with a intuitive, interactive site that they can return to by hearing about discounts through the subscription service or facebook page and by having an account model that saves customer's details.
+<p> Pianos-R-Us is a B2C commerce application that aims to sell pianos/keyboards and music books to music lovers and pianists alike. The goal of the website is to provide users with a intuitive, interactive site that they can return to by hearing about discounts through the subscription service or facebook page and by having an account model that saves customer's details.
 
 The site has been created as a retail store that allows products to be filtered out and searched for based on the customers needs.
 
@@ -329,7 +329,10 @@ This app was deployed using Heroku.
 * The Piano Time 1 image came from https://images-na.ssl-images-amazon.com/images/I/51SgFovOecL._AC_SX60_CR,0,0,60,60_.jpg
 * The music masterpiece image came from https://images-na.ssl-images-amazon.com/images/I/41B9b+GuARL._AC_SX60_CR,0,0,60,60_.jpg
 * The classical piano book image came from https://images-na.ssl-images-amazon.com/images/I/41C3WbeVgzL._AC_SX60_CR,0,0,60,60_.jpg
+* The Waltons image on the facebook mockup came from https://www.facebook.com/waltonsmusic/
+* The Lucan School of Music on the facebook mockup came from image came from https://www.facebook.com/lucanschoolofmusic/
+* Beethoven image on the facebook mockup came from was taken from https://en.wikipedia.org/wiki/Ludwig_van_Beethoven
 
 ## Code Sources
-* Boilerplate text taken for the footer of index.html is from: https://learn.codeinstitute.net/courses/course-v1:CodeInstitute+DRWM101+2021_T1/courseware/2b2a6057abf44272955637c09687ab43/acc4b7d56e3a400ebe110e5d734ce767/
-* Mailchimp code in the footer in base.html was taken from Mailchimp at: https://us10.admin.mailchimp.com/audience/forms/embedded-form/editor?id=900531
+* Boilerplate text taken for the footer of index.html is from https://learn.codeinstitute.net/courses/course-v1:CodeInstitute+DRWM101+2021_T1/courseware/2b2a6057abf44272955637c09687ab43/acc4b7d56e3a400ebe110e5d734ce767/
+* Mailchimp code in the footer in base.html was taken from Mailchimp at https://us10.admin.mailchimp.com/audience/forms/embedded-form/editor?id=900531
