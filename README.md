@@ -329,4 +329,7 @@ This app was deployed using Heroku.
 * The Piano Time 1 image came from https://images-na.ssl-images-amazon.com/images/I/51SgFovOecL._AC_SX60_CR,0,0,60,60_.jpg
 * The music masterpiece image came from https://images-na.ssl-images-amazon.com/images/I/41B9b+GuARL._AC_SX60_CR,0,0,60,60_.jpg
 * The classical piano book image came from https://images-na.ssl-images-amazon.com/images/I/41C3WbeVgzL._AC_SX60_CR,0,0,60,60_.jpg
+
+## Code Sources
 * Boilerplate text taken for the footer of index.html is from: https://learn.codeinstitute.net/courses/course-v1:CodeInstitute+DRWM101+2021_T1/courseware/2b2a6057abf44272955637c09687ab43/acc4b7d56e3a400ebe110e5d734ce767/
+* Mailchimp code in the footer in base.html was taken from Mailchimp at: https://us10.admin.mailchimp.com/audience/forms/embedded-form/editor?id=900531
