@@ -43,4 +43,3 @@ class Review(models.Model):
 
     def __str__(self):
         return f"Review {self.review_text} by {self.name}"
-        

@@ -23,7 +23,6 @@ class Checkout(models.Model):
     street_address_2 = models.CharField(max_length=80, blank=True, null=True)
     county = models.CharField(max_length=80, blank=True, null=True)
     postal_address = models.CharField(max_length=20, blank=False, null=True)
-    order_id = models.CharField(max_length=32, null=False, editable=False)
     checkout_date = models.DateTimeField(auto_now_add=True)
     delivery_cost = models.DecimalField(max_digits=6, decimal_places=2, default=0, null=False)
     order_total_cost = models.DecimalField(max_digits=10, decimal_places=2, default=0, null=False)
