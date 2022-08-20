@@ -297,15 +297,13 @@ This app was deployed using Heroku.
 * The repository will now be cloned onto the computer.
 
 # Acknowledgements
-## Credits (Edit this)
+## Credits
 * Most of the code and issues were heavily influenced by the information on the "Boutique Ado" walkthrough project from Code Institute.
-* Pagination boilerplate was used in this project. It was found from it being mentioned in the CI project above.
-* This youtube video that was used to give me a better understanding of Entity Relationship Diagrams, https://www.youtube.com/watch?v=-CuY5ADwn24.
-* Another youtube video that helped improve my understanding of views and linking them up to urls, https://www.youtube.com/watch?v=TblSa29DX6I.
 * My mentor Brian Macharia who supported me and provided me with both feedback and solutions to problems I faced while creating the website.
-* My lecturer Simen Daehlin helped me to better write my code to solve a couple of problems I had run into.
-* Code institute for the classes, sources, and tutors that they provided me.
+* Code institute for the classes, sources, and all of the tutors that they provided me and spent hours with me to help me find solutions when creating this website.
 * Bootstrap for the media query sizes that I used: https://getbootstrap.com/docs/4.1/layout/overview/
+* Mailchimp boilerplate was taken from Mailchimp linked below. 
+* Footer Boilerplate was taken and edited from Code Institute linked below.
 
 ## Content
 * The name, description and price for the wurlizter was taken from https://reverb.com/item/51972008-wurlitzer-200a-electric-piano-1970s-black?bk=eyJhbGciOiJIUzI1NiJ9.eyJqdGkiOiJkNzA3MTM3Yy1mY2IzLTRkY2ItOGEzNS1hYmNjY2I3NmI3MjUiLCJpYXQiOjE2NTkzMDY2MDQsInVzZXJfaWQiOiIiLCJzZXNzaW9uX2lkIjoiIiwiY29va2llX2lkIjoiMjQxY2I1MmItNmQ1Zi00YTgwLTk4OGMtZmZjMzM3OWE0M2IyIiwicHJvZHVjdF9pZCI6IjUxOTcyMDA4Iiwic291cmNlIjoiTk9ORSJ9.4Di4E8R3fcYIBAobeneTxocOqhIR5b4s5nYk7V6lM_U
@@ -332,6 +330,8 @@ This app was deployed using Heroku.
 * The Waltons image on the facebook mockup came from https://www.facebook.com/waltonsmusic/
 * The Lucan School of Music on the facebook mockup came from image came from https://www.facebook.com/lucanschoolofmusic/
 * Beethoven image on the facebook mockup came from was taken from https://en.wikipedia.org/wiki/Ludwig_van_Beethoven
+* To crop the images I used https://crop-circle.imageonline.co/
+
 
 ## Code Sources
 * Boilerplate text taken for the footer of index.html is from https://learn.codeinstitute.net/courses/course-v1:CodeInstitute+DRWM101+2021_T1/courseware/2b2a6057abf44272955637c09687ab43/acc4b7d56e3a400ebe110e5d734ce767/
