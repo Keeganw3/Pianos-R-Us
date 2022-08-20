@@ -9,81 +9,72 @@ Users can order one item or multiple items and place them into a cart to be boug
 
 # Features
 ## Existing Features
-## Navigation Bar
+## F1:Navigation Bar
 * The navigation bar is provided at the top of the webpage to allow the user to easily explore the website. It also maintains a consistent look across the website. The navbar lets the user find the products they're looking for by providing categories which can be further refined through filtering on the product page. They can also return to the home page through the site logo, and access their cart and account functionalities if they're signed in by clicking on the appropriate icons. If they're not signed in they will be shown links to sign in or register for an account instead. The account icon also changes colour based on whether the user is signed in or not. Lastly, the user can return to the landing page at any time using the site icon in the top left of the navbar.
 
-![Navbar Logged Out](/static/images/pp4-navbar-screenshot1.png)
+![Navbar Logged Out]()
 
-![Navbar Logged In](/static/images/pp4-navbar-screenshot2.png)
+![Navbar Logged In]()
 
-![Navbar Logged In(Admin)](/static/images/pp4-navbar-screenshot3.png)
+![Navbar Logged In(Admin)]()
 
-## Landing Page
+## F2:Landing Page
 * The landing page contains a hero image and hero text so that the user can intuitively understand what the app is selling and the goal of the company. There is also a shop now button if the user wants to go straight to the products or they can scroll down to get more information on what the app has to offer.
 
-![Hero Image](/static/images/pp4-hero-image-screenshot.png)
+![]()
 
-## Products page
+## F3:Products page
 All items in the store are displayed here with their images, names, prices, rating and categories. A user can use the navbar and sort function to filter through the products.
 
-![Card Posts](/static/images/pp4-card-post-screenshot.png)
+![]()
 
-## Product_view Page
+## F4:Product_view Page
 If the user clicks the image of the product on the products page they will be brought to the product details page where the product description along with the other product's relevant information is shown. The user can buy the item on its own or add it to a cart to purchase other products.
 
-![Post's Stories(Text)](/static/images/pp4-posts-stories-screenshot1.png)
+![]()
 
-## Product Management
+## F5:Product Management
 An admin is able to add, remove, and edit products as it is required. In order to add a product it must have a name, image and description. The option to remove and edit a product is only shown to an admin on the products page with two buttons underneath the product's image as shown in the screenshot below.
 
-![Post's Stories(Comments)](static/images/pp4-post-stories-screenshot2.png)
+![]()
 
-## Cart
+## F6:Cart
 When a user wants to buy several products at once they can use the cart. This keeps track of all the items the user has requested along with the amount, the cost per item and the total cost. The cart is available whether the user is signed in or not however the user won't be able to save their order history if they don't sign in.
 
-![Post Creater](static/images/pp4-post-creation.png)
+![]()
 
-## Checkout
+## F7:Checkout
 When a user want to buy one or many items they can reach the checkout page where they're delivery and payment card information are required. The payment system has been securely set up using Stripe and several webhooks to notify the user if a problem occurs. When the user successfully places an order they receive a notification on the checkout_success page as shown below.
 
-<!-- ## On-screen Notifications
-Notifications are shown to the user each time they add, remove or edit an item in their cart. This also happens if there is ever any problem that occurs while the user is checking out to ensure that the user knows if their purchase get through or not. -->
-
 ## Account Registration
-### Registration Page (Return to this?)
+### F8:Registration Page (Return to this?)
 * This application allows the user to create an account to log in and access additional features on the app. When registering the webpage will ask for a username (that doesn't already exist), an optional email, a password, and the password a second time to confirm it. The webpage will detect the strength of the password entered to make sure it isn't too small or easy to figure out.
 
-![Registration page](static/images/pp4-registration-page.png)
+![Registration page]()
 
-### Login Page
+### F9:Login Page
 * Logging in lets the user leave reviews on posts. The register and login links are only in the navbar whenever the user isn't already logged in. When the user is logged in the navbar replaces register and log in with log out to easily allow the user to sign out when they're done.
 
-![Login page](static/images/pp4-login-page.png)
+![Login page]()
 
-### Logout Page
+### F10:Logout Page
 * The logout page will ask the user if they are certain that they would like to log out and they must press a button to confirm this.
 
-![Logout page](static/images/pp4-logout-page.png)
+![Logout page]()
 
-## User Account
+## F11:User Account
 A user can make an account at anytime using the navbar. If a user does create an account this allows them to save their delivery information, leave reviews and shows a purchase history of previous orders. 
 
-## Reviews
+## F12:Reviews
 An account holder can leave reviews on the bottom of a product's detail page to tell people what they think of a product, how well it works and of it is worth the price. When a review is left they receive a notification that it will be assessed by an admin. Once an admin approves it, the review will appear at the bottom of the page.
 
-<!-- ## Team page
-All members of the team are shown here with their names, pics, brief backgrounds and their positions within the online shopping network. -->
-
-<!-- ## Site Locations
-The locations of our 5 stores are shown here in case a user would like to visit a store in person instead. They are shown using google maps, their address, name, and country. -->
-
-## Footer
+## F13:Footer
 * The footer is used to link the user to the site's facebook page and subscription in case they want to learn about deals in the store. There is also text to let people know that this is strictly for educational use only.
 
-![Footer](static/images/pp4-footer-screenshot.png)
+![Footer]()
 
 ## SEO and Marketing
-### Keywords and descriptions
+### F14:Keywords and descriptions
 A range of words were brainstormed and chosen relating to pianos, music stores and music along with words that a user may tangentially use when looking these up. This included short-tail keywords and long-tail phrases to attract large and relevant numbers of potential customers to the website.
 
 The words and phrases chosen were: piano store, piano shop, electronic piano, thomann dp 95, electronic keyboards, 61 key electronic keyboard, wurlitzer electric piano, best electronic keyboard for beginners, bastien piano basics, piano songbook, piano book, piano classics, teach yourself piano, piano books for beginners, piano stool, piano benches.
@@ -103,11 +94,6 @@ The email marketing was set up through Mailchimp which allowed users to subscrib
 
 ![Mailchimp Subscription](static/images/pp4-logout-page.png)
 ![Mailchimp Subscription List](static/images/pp4-logout-page.png)
-
-<!-- ## Privacy Policy
-A privacy policy was generated using https://www.privacypolicygenerator.info/. This was done to address the GDPR policies. The link was placed in the footer of each page of the website and the policy was downloaded  and given styling to match the rest of the website.
-
-![Privacy Policy](static/images/pp4-logout-page.png) -->
 
 # Future Features to be added
 ### Staff Page
@@ -153,11 +139,7 @@ Notifications that would tell the user whenever they add, update or remove items
 </details>
 
 ## Entity Relationship Diagrams
-* The ER diagram shows the logic between the post and comments model with the author having a fixed ID that is used between the two. The relationship between the comments and the author is a many-to-many relationship at both ends.
-
-* The relationship between the author and the posts and the posts and comments is a one-to-many relationship.
-
-* The likes, created_on, and updated_on variables are data that wasn't used in the end.
+* The ER diagram shows the logic between the all class models present in this e-commerce application.
 
 <details>
 <summary>Entity Relationship Diagram for all Class Models</summary>
@@ -172,74 +154,8 @@ Notifications that would tell the user whenever they add, update or remove items
 Wireframes and a data schema were created so that I had a clear vision of the website that I'd want to make.
 
 # Testing
-## Validator Testing
-### HTML
-* The only errors that are occuring here are from the jinja code because it the website doesn't support it. The images below is the code not containing the jinja code and passing the tests showing that is meets the appropriate requirements. The !Doctype and footer were pasted in as well because these weren't detected as coming from the jinja tags.
-
-* The jinja tags were left in instead of being replaced with standard html because it would've meant taking out the if statements that make the navbar and comments section change based on whether the user is signed in so this was chosen as the better option.
-
-<details>
-<summary>HTML Validation</summary>
-
-![base validation](static/validator-images/pp4-basehtml-validator.png)
-![index validation](static/validator-images/pp4-indexhtml-validator.png)
-![post validation](static/validator-images/pp4-posthtml-validator.png)
-![signup validation](static/validator-images/pp4-signuphtml-validator.png)
-![login validation](static/validator-images/pp4-loginhtml-validator.png)
-![logout validation](static/validator-images/pp4-logouthtml-validator.png)
-
-</details>
-
-* Many htmls files were imported from different sources to allow the website to work but were never touched so those haven't been validated. However the login, logout and signup were altered so those have been validated above.
-
-### CSS
-* No errors or warnings were found through the W3C CSS validator and I was given the code for this icon to prove this.
-<p>
-    <a href="http://jigsaw.w3.org/css-validator/check/referer">
-        <img style="border:0;width:88px;height:31px"
-            src="http://jigsaw.w3.org/css-validator/images/vcss"
-            alt="Valid CSS!"/>
-    </a>
-</p>
-
-<details>
-<summary>CSS Validation</summary>
-
-![CSS Validation](static/validation-images/pp4-css-validation.png)
-
-</details>
-
-### Python
-* Only the models.py and settings.py files didn't pass testing because the length of the lines of code had too many characters but there isn't a way to shorten them.
-
-<details>
-<summary>Python Validation</summary>
-
-![Admin Validation](static/python-validation/pp4-adminpy-validation.png)
-![Apps Validation](static/python-validation/pp4-appspy-validation.png)
-![Blog-Urls Validation](static/python-validation/pp4-blog-urlspy-validation.png)
-![Forms Validation](static/python-validation/pp4-formspy-validation.png)
-![Models Validation](static/python-validation/pp4-modelspy-validation.png)
-![Settings Validation](static/python-validation/pp4-settingspy-validation.png)
-![Urls Validation](static/python-validation/pp4-urlspy-validation.png)
-![Views Validation](static/python-validation/pp4-viewspy-validation.png)
-
-</details>
-
 ### User Testing
-The navbar was tested by clicking each link with each type of user to see if it worked.
-
-The post drafting was tested by logging into the admin page and creating test posts to see the functionality at work to make sure it was showing up on the database.
-
-Post creation was tested by purposely filling in some sections and leaving others empty to check that the post creater was only allowing posts to be made if they met the correct requirements. 
-
-Comment creation was tested by making several comments across multiple posts to check that this feature was working as intended. It was decided that the user needed a visual que to let them know that their comment had been sent to an admin to be approved because otherwise users would have no way to know if their comment had been made or not.
-
-Posts and comments were viewed with all types of accounts and multiple posts and comments were made using placeholder text and images to make sure all appropriate aspects of the website could be seen by a user.
-
-The administration account was tested by creating another user and making a comment on a post. The comment didn't show up in the comment section until I logged in as an admin and approved the comment like it was intended. I deleted a comment to ensure this worked too and a post was also made and deleted by an admin to make sure this functioned correctly.
-
-When the account registration was made it was tested by going to the registration page and filling it out. I added a username, made a password and confirmed it. I knew I was signed in because the navbar changed from Register/Log-in to Logout. Similarly the admin accounts navbar had been changed to Create a Post and Logout.
+The navbar was tested by clicking each link with each type of user to see if they worked and expanded like intended.
 
 ## Manual Testing
 ### Media Queries
@@ -247,7 +163,6 @@ I tested the media queries by manually adjusting the screen size from roughly 50
 
 ## Known Bugs
 * The text on the confirmation email page is hidden underneath the navbar.
-
 
 # Deployment
 This app was deployed using Heroku.
