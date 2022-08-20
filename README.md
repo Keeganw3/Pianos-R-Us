@@ -134,6 +134,7 @@ A privacy policy was generated using https://www.privacypolicygenerator.info/. T
 * HTML - A mark-up language that uses semantic structures.
 * CSS - Cascade style sheets are used to style the quiz and website.
 * Python - Programming language used to create the databases, models, and views for this website.
+* Javascript - Core programming language used for incorporating third-party libraries and client side webpage behaviour.
 
 ## Libraries, Frameworks and Programs
 * Gitpod - Used as a platform for writing code. The command line commits and pushes to GitHub.
@@ -142,8 +143,8 @@ A privacy policy was generated using https://www.privacypolicygenerator.info/. T
 * Flask - Used to make working with Python easier and faster.
 * Django - Used for importing frameworks that sped up making the website.
 * Bootstrap - Used to build webpages.
-* Cloudinary - Used to display the images used on the website indefinitely.
-* lucidchart - Used to create the entitiy relationship diagram for this project.
+* AWS - Used to host the images used on the website indefinitely.
+* Drawsql - Used to create the entitiy relationship diagram for this project.
 * Balsamiq - Used to make the wireframes for the webpages.
 * Allauth - Used for account registration.
 * Font Awesome - Used to include the icons in the footer.
@@ -178,9 +179,9 @@ A privacy policy was generated using https://www.privacypolicygenerator.info/. T
 * The likes, created_on, and updated_on variables are data that wasn't used in the end.
 
 <details>
-<summary>Entity Relationship Diagram for Posts and Comments</summary>
+<summary>Entity Relationship Diagram for all Class Models</summary>
 
-![ER Diagram](static/er-diagrams/pp4-er-diagram.png)
+![ER Diagram](static/er_diagrams/pianos_r_us_er_diagrams.png)
 
 </details>
 
@@ -302,8 +303,8 @@ This app was deployed using Heroku.
 * My mentor Brian Macharia who supported me and provided me with both feedback and solutions to problems I faced while creating the website.
 * Code institute for the classes, sources, and all of the tutors that they provided me and spent hours with me to help me find solutions when creating this website.
 * Bootstrap for the media query sizes that I used: https://getbootstrap.com/docs/4.1/layout/overview/
-* Mailchimp boilerplate was taken from Mailchimp linked below. 
-* Footer Boilerplate was taken and edited from Code Institute linked below.
+* Mailchimp boilerplate taken from Mailchimp linked below. 
+* Footer Boilerplate taken and edited from Code Institute linked below.
 
 ## Content
 * The name, description and price for the wurlizter was taken from https://reverb.com/item/51972008-wurlitzer-200a-electric-piano-1970s-black?bk=eyJhbGciOiJIUzI1NiJ9.eyJqdGkiOiJkNzA3MTM3Yy1mY2IzLTRkY2ItOGEzNS1hYmNjY2I3NmI3MjUiLCJpYXQiOjE2NTkzMDY2MDQsInVzZXJfaWQiOiIiLCJzZXNzaW9uX2lkIjoiIiwiY29va2llX2lkIjoiMjQxY2I1MmItNmQ1Zi00YTgwLTk4OGMtZmZjMzM3OWE0M2IyIiwicHJvZHVjdF9pZCI6IjUxOTcyMDA4Iiwic291cmNlIjoiTk9ORSJ9.4Di4E8R3fcYIBAobeneTxocOqhIR5b4s5nYk7V6lM_U
@@ -330,7 +331,7 @@ This app was deployed using Heroku.
 * The Waltons image on the facebook mockup came from https://www.facebook.com/waltonsmusic/
 * The Lucan School of Music on the facebook mockup came from image came from https://www.facebook.com/lucanschoolofmusic/
 * Beethoven image on the facebook mockup came from was taken from https://en.wikipedia.org/wiki/Ludwig_van_Beethoven
-* To crop the images I used https://crop-circle.imageonline.co/
+* To crop the images on the facebook mockup I used https://crop-circle.imageonline.co/
 
 
 ## Code Sources
