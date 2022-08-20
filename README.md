@@ -77,7 +77,7 @@ All members of the team are shown here with their names, pics, brief backgrounds
 <!-- ## Site Locations
 The locations of our 5 stores are shown here in case a user would like to visit a store in person instead. They are shown using google maps, their address, name, and country. -->
 
-## Footer (Return to this)
+## Footer
 * The footer is used to link the user to the site's facebook page and subscription in case they want to learn about deals in the store. There is also text to let people know that this is strictly for educational use only.
 
 ![Footer](static/images/pp4-footer-screenshot.png)
