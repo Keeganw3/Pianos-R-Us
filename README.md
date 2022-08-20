@@ -1,16 +1,16 @@
 <h1 align="center">Pianos-R-Us</h1>
 
 (Include live link to project somewhere here)
-<p> Pianos-R-Us is a B2C commerce application that aims to sell pianos/keyboards and music books to music lovers and pianists alike. The goal of the website is to provide users with a intuitive, interactive site that they can return to by hearing about discounts through the subscription service or facebook page and by having an account model that saves customer's details.
+<p> Pianos-R-Us is a B2C commerce application that aims to sell pianos, keyboards and music books to music lovers and pianists alike. The goal of the website is to provide users with an intuitive, interactive store that they can return to by hearing about discounts through the subscription service or facebook page and by having an account model that saves customer's details.
 
 The site has been created as a retail store that allows products to be filtered out and searched for based on the customers needs.
 
-Users can order one item or multiple items and place them into a cart to be bought at their convenience through the Stripe payment system. They are able to edit and remove products from the cart whenever they want and the total cost is displayed at all times. Users can also make an account to save their details, rate products and give reviews to products they have bought.
+Users can order one item or multiple items and place them into a cart to be bought at their convenience through the Stripe payment system. They are able to add and remove products from the cart whenever they want and the total cost is displayed at all times. Users can also make an account to save their details, show their order history and give reviews to products.
 
 # Features
 ## Existing Features
 ## Navigation Bar
-* The navigation bar is provided at the top of the webpage to allow the user to easily explore the website. It also maintains a consistent look on across the website. The navbar lets the user find the products they're looking for by providing categories which can be further refined through filtering on the product page. They can also return to the home page through the site logo, and access their cart and account functionalities if they're signed in by clicking on the appropriate icons. If they're not signed in they will be shown links to sign in or register for an account instead.
+* The navigation bar is provided at the top of the webpage to allow the user to easily explore the website. It also maintains a consistent look across the website. The navbar lets the user find the products they're looking for by providing categories which can be further refined through filtering on the product page. They can also return to the home page through the site logo, and access their cart and account functionalities if they're signed in by clicking on the appropriate icons. If they're not signed in they will be shown links to sign in or register for an account instead. The account icon also changes colour based on whether the user is signed in or not. Lastly, the user can return to the landing page at any time using the site icon in the top left of the navbar.
 
 ![Navbar Logged Out](/static/images/pp4-navbar-screenshot1.png)
 
@@ -29,38 +29,34 @@ All items in the store are displayed here with their images, names, prices, rati
 ![Card Posts](/static/images/pp4-card-post-screenshot.png)
 
 ## Product_view Page
-If the user clicks the image of the product on the products page they will be brought to the product details page where the product description along with the other product's relevant information is shown. The user can buy the item on its own or add it to a cart to purchase multiple products.
+If the user clicks the image of the product on the products page they will be brought to the product details page where the product description along with the other product's relevant information is shown. The user can buy the item on its own or add it to a cart to purchase other products.
 
 ![Post's Stories(Text)](/static/images/pp4-posts-stories-screenshot1.png)
 
 ## Product Management
-An admin is able to add, remove, and edit products as it is required. In order to add a product it must have a name, image and description. The option to remove and edit a product is shown to an admin on the products page with two buttons underneath the product's image as shown in the screenshot below.
+An admin is able to add, remove, and edit products as it is required. In order to add a product it must have a name, image and description. The option to remove and edit a product is only shown to an admin on the products page with two buttons underneath the product's image as shown in the screenshot below.
 
 ![Post's Stories(Comments)](static/images/pp4-post-stories-screenshot2.png)
 
-* When a user has left a comment they are given an alert to notify them.
-
-![Comment's Alert](static/images/pp4-comment-alert.png)
-
 ## Cart
-When a user wants to buy several products at once they can use the cart. This keeps track of all the items the user has requested along with the amount, the cost per item and the total cost.
+When a user wants to buy several products at once they can use the cart. This keeps track of all the items the user has requested along with the amount, the cost per item and the total cost. The cart is available whether the user is signed in or not however the user won't be able to save their order history if they don't sign in.
 
 ![Post Creater](static/images/pp4-post-creation.png)
 
 ## Checkout
-When a user buys one or multiple items they are taken to the checkout page where they're delivery and payment card information are required. The payment system has been securely set up using Stripe and several webhooks to notify the user if a problem occurs. (Webhooks could be separate feature). When the user successfully places an order they receive a notification and an email confirmation.
+When a user want to buy one or many items they can reach the checkout page where they're delivery and payment card information are required. The payment system has been securely set up using Stripe and several webhooks to notify the user if a problem occurs. When the user successfully places an order they receive a notification on the checkout_success page as shown below.
 
-## On-screen Notifications
-Notifications are shown to the user each time they add, remove or edit an item in their cart. This also happens if there is ever any problem that occurs while the user is checking out to ensure that the user knows if their purchase get through or not.
+<!-- ## On-screen Notifications
+Notifications are shown to the user each time they add, remove or edit an item in their cart. This also happens if there is ever any problem that occurs while the user is checking out to ensure that the user knows if their purchase get through or not. -->
 
 ## Account Registration
-### Registration Page
+### Registration Page (Return to this?)
 * This application allows the user to create an account to log in and access additional features on the app. When registering the webpage will ask for a username (that doesn't already exist), an optional email, a password, and the password a second time to confirm it. The webpage will detect the strength of the password entered to make sure it isn't too small or easy to figure out.
 
 ![Registration page](static/images/pp4-registration-page.png)
 
 ### Login Page
-* Logging in lets the user leave comments on posts. The register and login links are only in the navbar whenever the user isn't already logged in. When the user is logged in the navbar replaces register and log in with log out to easily allow the user to sign out when they're done.
+* Logging in lets the user leave reviews on posts. The register and login links are only in the navbar whenever the user isn't already logged in. When the user is logged in the navbar replaces register and log in with log out to easily allow the user to sign out when they're done.
 
 ![Login page](static/images/pp4-login-page.png)
 
@@ -70,25 +66,25 @@ Notifications are shown to the user each time they add, remove or edit an item i
 ![Logout page](static/images/pp4-logout-page.png)
 
 ## User Account
-A user can make an account at anytime using the navbar. If a user does create an account this allows them to save their delivery information so they don't need to enter it everytime they checkout. They are also given a purchase history so they can see what they bought from the site and when. An account user can also leaves reviews.
+A user can make an account at anytime using the navbar. If a user does create an account this allows them to save their delivery information, leave reviews and shows a purchase history of previous orders. 
 
 ## Reviews
-An account holder can leave reviews on the bottom of a product's detail page to tell people what they think of a product, how well it works and of it is worth the price. 
+An account holder can leave reviews on the bottom of a product's detail page to tell people what they think of a product, how well it works and of it is worth the price. When a review is left they receive a notification that it will be assessed by an admin. Once an admin approves it, the review will appear at the bottom of the page.
 
-## Team page
-All members of the team are shown here with their names, pics, brief backgrounds and their positions within the online shopping network.
+<!-- ## Team page
+All members of the team are shown here with their names, pics, brief backgrounds and their positions within the online shopping network. -->
 
-## Site Locations
-The locations of our 5 stores are shown here in case a user would like to visit a store in person instead. They are shown using google maps, their address, name, and country.
+<!-- ## Site Locations
+The locations of our 5 stores are shown here in case a user would like to visit a store in person instead. They are shown using google maps, their address, name, and country. -->
 
-## Footer
-* The footer is used to add authenticity to the website and to let people know that this is strictly for educational use only.
+## Footer (Return to this)
+* The footer is used to link the user to the site's facebook page and subscription in case they want to learn about deals in the store. There is also text to let people know that this is strictly for educational use only.
 
 ![Footer](static/images/pp4-footer-screenshot.png)
 
 ## SEO and Marketing
 ### Keywords and descriptions
-A range of words were brainstormed and chosen relating to pianos and music along with words that a user may tangentially use when looking these up. This included short-tail keywords and long-tail phrases to attract large and relevant numbers of potential customers to the website.
+A range of words were brainstormed and chosen relating to pianos, music stores and music along with words that a user may tangentially use when looking these up. This included short-tail keywords and long-tail phrases to attract large and relevant numbers of potential customers to the website.
 
 The words and phrases chosen were: piano store, piano shop, electronic piano, thomann dp 95, electronic keyboards, 61 key electronic keyboard, wurlitzer electric piano, best electronic keyboard for beginners, bastien piano basics, piano songbook, piano book, piano classics, teach yourself piano, piano books for beginners, piano stool, piano benches.
 
@@ -101,17 +97,17 @@ The words and phrases were used for:
 ### Marketing Techniques
 The types of marketing used for this app were social media marketing and email marketing. A facebook page was set up to advertise that this website exists.
 
-![Facebook page 1](static/images/pp4-logout-page.png)
+![Facebook Mockup](pianos_r_us_facebook_mockup.pdf)
 
 The email marketing was set up through Mailchimp which allowed users to subscribe to a newsletter from the website by entering their email address. This was placed in the footer of the website on each page. The subscribers list is maintained on Mailchimp.
 
 ![Mailchimp Subscription](static/images/pp4-logout-page.png)
 ![Mailchimp Subscription List](static/images/pp4-logout-page.png)
 
-## Privacy Policy
+<!-- ## Privacy Policy
 A privacy policy was generated using https://www.privacypolicygenerator.info/. This was done to address the GDPR policies. The link was placed in the footer of each page of the website and the policy was downloaded  and given styling to match the rest of the website.
 
-![Privacy Policy](static/images/pp4-logout-page.png)
+![Privacy Policy](static/images/pp4-logout-page.png) -->
 
 # Future Features to be added
 ### Likes/Dislikes
