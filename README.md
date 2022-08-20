@@ -110,20 +110,14 @@ A privacy policy was generated using https://www.privacypolicygenerator.info/. T
 ![Privacy Policy](static/images/pp4-logout-page.png) -->
 
 # Future Features to be added
-### Likes/Dislikes
-* This would allow the user to like and dislike posts and give people an indicator of whether they should read them or not.
+### Staff Page
+This page would show the user all of the staff that work on this e-commerce application.
 
-### Post Filter
-* Ideally, a user could filter through different posts based on the type of new story it is e.g. (medical, tv, celebrity), how recent it is and the number of comments (interactivity) to give the user an easier time navigating the website and posts.
+### Edit/Delete Reviews
+A user could ask to have their reveiws edited or deleted.
 
-### Dates
-* This would allow users to see how relevant the post and comments are.
-
-### Allow users to make posts
-* Users would have much greater influence over the website by being able to leave posts.
-
-### Restyling of admin pages
-* The admin pages all add functionality to the website but they don't match the website's theme or have its core features (navbar and footer).
+### Toasts
+Notifications that would tell the user whenever they add, update or remove items in their cart. They would also tell a user when a purchase has gone through or failed.
 
 # Technologies Used
 ## Languages Used
@@ -136,9 +130,8 @@ A privacy policy was generated using https://www.privacypolicygenerator.info/. T
 * Gitpod - Used as a platform for writing code. The command line commits and pushes to GitHub.
 * GitHub - Used for agile development to track progress on the kanban board.
 * Heroku - Cloud platform used to deploy this application and host the code.
-* Flask - Used to make working with Python easier and faster.
 * Django - Used for importing frameworks that sped up making the website.
-* Bootstrap - Used to build webpages.
+* Bootstrap - Used to build webpages with pre-built css classes.
 * AWS - Used to host the images used on the website indefinitely.
 * Drawsql - Used to create the entitiy relationship diagram for this project.
 * Balsamiq - Used to make the wireframes for the webpages.
@@ -147,24 +140,16 @@ A privacy policy was generated using https://www.privacypolicygenerator.info/. T
 * Google Fonts - Used to allow different fonts when creating posts.
 * Gunicorn - Used as a server to help run on Heroku.
 * Django Crispy Forms - Used to easily create forms for logging in.
-* Django Summernote - Used for post creation.
 
 # Design
 ## Wireframes
-* These wireframes are for the home, post story, registration, login, and logout pages. There are no wireframes for the Django admin pages used for creating posts, comments, and comment approval.
+* These wireframes are for the home, products, product_view, checkout, checkout_success registration, login, and logout pages. There are no wireframes for the Django admin pages used for creating posts, comments, and comment approval.
 
 <details>
 <summary>Wireframes</summary>
 
-![home-wireframe](static/wireframes/pp4-home-page-wireframe.png)
+![Wireframes](static/wireframes/pianos-r-us-wireframes.png)
 
-![post-wireframe](static/wireframes/pp4-post-story-page-wireframe.png)
-
-![register-wireframe](static/wireframes/pp4-registration-page-wireframe.png)
-
-![login-wireframe](static/wireframes/pp4-login-page-wireframe.png)
-
-![logout-wireframe](static/wireframes/pp4-logout-page-wireframe.png)
 </details>
 
 ## Entity Relationship Diagrams
@@ -183,6 +168,8 @@ A privacy policy was generated using https://www.privacypolicygenerator.info/. T
 
 ## Planning
 * A project in Github was used as an Agile Tool for tracking the building process of this project. Issues were tracked using a kanban board and linked to multiple Epics that would show the over all progress of this project's development. Each issue was tested to ensure that they could be considered completed. The criteria of these tests are outlined below.
+
+Wireframes and a data schema were created so that I had a clear vision of the website that I'd want to make.
 
 # Testing
 ## Validator Testing
@@ -258,10 +245,9 @@ When the account registration was made it was tested by going to the registratio
 ### Media Queries
 I tested the media queries by manually adjusting the screen size from roughly 500-1000px to make sure the correct changes were taking place above or below each specific screen size.
 
-
 ## Known Bugs
 * The text on the confirmation email page is hidden underneath the navbar.
-* The footer doesn't remain at the bottom of the webpage depending on which page the user is on. This is very noticable on the signup, login and logout pages.
+
 
 # Deployment
 This app was deployed using Heroku.
