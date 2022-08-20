@@ -47,7 +47,7 @@ When a user wants to buy several products at once they can use the cart. This ke
 When a user want to buy one or many items they can reach the checkout page where they're delivery and payment card information are required. The payment system has been securely set up using Stripe and several webhooks to notify the user if a problem occurs. When the user successfully places an order they receive a notification on the checkout_success page as shown below.
 
 ## Account Registration
-### F8:Registration Page (Return to this?)
+### F8:Registration Page
 * This application allows the user to create an account to log in and access additional features on the app. When registering the webpage will ask for a username (that doesn't already exist), an optional email, a password, and the password a second time to confirm it. The webpage will detect the strength of the password entered to make sure it isn't too small or easy to figure out.
 
 ![Registration page]()
@@ -94,6 +94,12 @@ The email marketing was set up through Mailchimp which allowed users to subscrib
 
 ![Mailchimp Subscription](static/images/pp4-logout-page.png)
 ![Mailchimp Subscription List](static/images/pp4-logout-page.png)
+
+### F15: Stripe Payment System
+The service was used to give customers a guarenteed safe way to pay for products so they don't have to worry about losing their credit/debit card details or the payment not going through. Stripe works using payment intents to verify the legitimacy of a user's credit/debit card details when making a purchase but doesn't save this information.
+
+### Custom 404 page
+A custom 404 page was added to this application so that this page would aethestically fit in better with the rest of the site.
 
 # Future Features to be added
 ### Staff Page
