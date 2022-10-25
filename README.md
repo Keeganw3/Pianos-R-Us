@@ -21,30 +21,32 @@ Users can order one item or multiple items and place them into a cart to be boug
 ## F2:Landing Page
 * The landing page contains a hero image and hero text so that the user can intuitively understand what the app is selling and the goal of the company. There is also a shop now button if the user wants to go straight to the products or they can scroll down to get more information on what the app has to offer.
 
-![]()
+![Landing Page]()
 
 ## F3:Products page
 All items in the store are displayed here with their images, names, prices, rating and categories. A user can use the navbar and sort function to filter through the products.
 
-![]()
+![Products Page]()
 
 ## F4:Product_view Page
 If the user clicks the image of the product on the products page they will be brought to the product details page where the product description along with the other product's relevant information is shown. The user can buy the item on its own or add it to a cart to purchase other products.
 
-![]()
+![Product_view Page]()
 
 ## F5:Product Management
 An admin is able to add, remove, and edit products as it is required. In order to add a product it must have a name, image and description. The option to remove and edit a product is only shown to an admin on the products page with two buttons underneath the product's image as shown in the screenshot below.
 
-![]()
+![Product Management Page]()
 
 ## F6:Cart
 When a user wants to buy several products at once they can use the cart. This keeps track of all the items the user has requested along with the amount, the cost per item and the total cost. The cart is available whether the user is signed in or not however the user won't be able to save their order history if they don't sign in.
 
-![]()
+![User's Cart]()
 
 ## F7:Checkout
 When a user want to buy one or many items they can reach the checkout page where they're delivery and payment card information are required. The payment system has been securely set up using Stripe and several webhooks to notify the user if a problem occurs. When the user successfully places an order they receive a notification on the checkout_success page as shown below.
+
+![Checkout Page]()
 
 ## Account Registration
 ### F8:Registration Page
@@ -65,8 +67,12 @@ When a user want to buy one or many items they can reach the checkout page where
 ## F11:User Account
 A user can make an account at anytime using the navbar. If a user does create an account this allows them to save their delivery information, leave reviews and shows a purchase history of previous orders. 
 
+![User Account Page]()
+
 ## F12:Reviews
 An account holder can leave reviews on the bottom of a product's detail page to tell people what they think of a product, how well it works and of it is worth the price. When a review is left they receive a notification that it will be assessed by an admin. Once an admin approves it, the review will appear at the bottom of the page.
+
+![User Reviews]()
 
 ## F13:Footer
 * The footer is used to link the user to the site's facebook page and subscription in case they want to learn about deals in the store. There is also text to let people know that this is strictly for educational use only.
