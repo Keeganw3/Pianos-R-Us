@@ -1,6 +1,7 @@
 <h1 align="center">Pianos-R-Us</h1>
 
-(Include live link to project somewhere here)
+Website Link: https://pianos-r-us.herokuapp.com
+
 <p> Pianos-R-Us is a B2C commerce application that aims to sell pianos, keyboards and music books to music lovers and pianists alike. The goal of the website is to provide users with an intuitive, interactive store that they can return to by hearing about discounts through the subscription service or facebook page and by having an account model that saves customer's details.
 
 The site has been created as a retail store that allows products to be filtered out and searched for based on the customers needs.
