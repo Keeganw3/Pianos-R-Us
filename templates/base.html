@@ -52,7 +52,7 @@
         <a class="navbar-brand nav-link icons" href="{% url 'home' %}">Pianos-R-Us
           <span><i class="fas fa-music icons"></i></span>
         </a>
-          <form method="GET" action="{% url 'products' %}" class="form-inline my-2 py-lg-0">
+          <form method="GET" action="{% url 'products' %}" class="form-inline my-2 py-lg-0 d-none d-md-block d-lg-block d-xl-block">
             <div class="input-group w-100 nav-div">
               <input class="form-control mr-sm-2 border border-black rounded-0" type="text" name="search" placeholder="Search" aria-label="Search">
               <div class="input-group-append">
@@ -64,7 +64,7 @@
               </div>
             </div>
           </form>
-          <div class="col-12 col-lg-4 my-auto py-1 py-lg-0">
+          <div class="col-12 col-lg-4 my-auto py-1 py-lg-0 d-none d-md-block d-lg-block d-xl-block">
             <ul class="list-inline text-lg-right my-0">
                 <li class="list-inline-item dropdown">
                     <a class="text-black nav-link icons" href="#" id="user-options" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
