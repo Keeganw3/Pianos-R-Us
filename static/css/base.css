@@ -56,6 +56,10 @@ header, li {
     margin-top: 13%;
 }
 
+.icons-placement {
+    margin-left: 47%;
+}
+
 /* Landing page */
 
 .shop-btn {
@@ -122,6 +126,18 @@ a.category-badge > span.badge:hover {
 
 
 /* Media Queries */
+
+@media screen and (min-width: 1200px) {
+    .icons-placement {
+        margin-left: 56%;
+    }        
+}
+
+@media screen and (max-width: 992px) {
+    .icons-placement {
+        margin-left: 38%;
+    }        
+}
 
 @media screen and (max-width: 768px) {
     .product_image {
