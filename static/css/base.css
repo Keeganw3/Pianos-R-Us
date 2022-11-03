@@ -7,11 +7,11 @@ body {
     background: url("/media/hero-image.jpg") no-repeat center center;
     background-size: cover;
     width: 70vw;
-    height: 80vh;
+    height: 70vh;
 }
 
 .hero-text {
-    margin-top: 30%;
+    margin-top: 35%;
     font-size: 20px;
 }
 
@@ -136,7 +136,7 @@ a.category-badge > span.badge:hover {
 @media screen and (max-width: 992px) {
     .icons-placement {
         margin-left: 38%;
-    }        
+    }
 }
 
 @media screen and (max-width: 768px) {
