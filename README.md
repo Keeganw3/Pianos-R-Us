@@ -1,6 +1,6 @@
 <h1 align="center">Pianos-R-Us</h1>
 
-Website Link: https://pianos-r-us.herokuapp.com
+Website: https://pianos-r-us.herokuapp.com
 
 <p> Pianos-R-Us is a B2C commerce application that aims to sell pianos, keyboards and music books to music lovers and pianists alike. The goal of the website is to provide users with an intuitive, interactive store that they can return to by hearing about discounts through the subscription service or facebook page and by having an account model that saves customer's details.
 
@@ -8,16 +8,15 @@ The site has been created as a retail store that allows products to be filtered 
 
 Users can order one item or multiple items and place them into a cart to be bought at their convenience through the Stripe payment system. They are able to add and remove products from the cart whenever they want and the total cost is displayed at all times. Users can also make an account to save their details, show their order history and give reviews to products.
 
+
 # Features
 ## Existing Features
 ## F1:Navigation Bar
 * The navigation bar is provided at the top of the webpage to allow the user to easily explore the website. It also maintains a consistent look across the website. The navbar lets the user find the products they're looking for by providing categories which can be further refined through filtering on the product page. They can also return to the home page through the site logo, and access their cart and account functionalities if they're signed in by clicking on the appropriate icons. If they're not signed in they will be shown links to sign in or register for an account instead. The account icon also changes colour based on whether the user is signed in or not. Lastly, the user can return to the landing page at any time using the site icon in the top left of the navbar.
 
-![Navbar Logged Out]()
+![Main Navbar](static/screenshots/main_nav_screenshot.png)
 
-![Navbar Logged In]()
-
-![Navbar Logged In(Admin)]()
+![Mobile Navbar](static/screenshots/mobile_nav_screenshot(logout).png)
 
 ## F2:Landing Page
 * The landing page contains a hero image and hero text so that the user can intuitively understand what the app is selling and the goal of the company. There is also a shop now button if the user wants to go straight to the products or they can scroll down to get more information on what the app has to offer.
@@ -54,6 +53,14 @@ When a user want to buy one or many items they can reach the checkout page where
 * This application allows the user to create an account to log in and access additional features on the app. When registering the webpage will ask for a username (that doesn't already exist), an optional email, a password, and the password a second time to confirm it. The webpage will detect the strength of the password entered to make sure it isn't too small or easy to figure out.
 
 ![Registration page]()
+
+![Navbar Logged Out](static/screenshots/mobile_nav_screenshot(logout).png)
+
+![Navbar Logged In](static/screenshots/mobile_nav_screenshot(login).png)
+
+![Navbar Logged In(General User)]()
+
+![Navbar Logged In(Admin)]()
 
 ### F9:Login Page
 * Logging in lets the user leave reviews on posts. The register and login links are only in the navbar whenever the user isn't already logged in. When the user is logged in the navbar replaces register and log in with log out to easily allow the user to sign out when they're done.
