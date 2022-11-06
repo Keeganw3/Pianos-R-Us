@@ -8,7 +8,6 @@ The site has been created as a retail store that allows products to be filtered 
 
 Users can order one item or multiple items and place them into a cart to be bought at their convenience through the Stripe payment system. They are able to add and remove products from the cart whenever they want and the total cost is displayed at all times. Users can also make an account to save their details, show their order history and give reviews to products.
 
-
 # Features
 ## Existing Features
 ## F1:Navigation Bar
@@ -106,8 +105,8 @@ The types of marketing used for this app were social media marketing and email m
 
 The email marketing was set up through Mailchimp which allowed users to subscribe to a newsletter from the website by entering their email address. This was placed in the footer of the website on each page. The subscribers list is maintained on Mailchimp.
 
-![Mailchimp Subscription](static/images/pp4-logout-page.png)
-![Mailchimp Subscription List](static/images/pp4-logout-page.png)
+![Mailchimp Subscription]()
+![Mailchimp Subscription List]()
 
 ### F15: Stripe Payment System
 The service was used to give customers a guarenteed safe way to pay for products so they don't have to worry about losing their credit/debit card details or the payment not going through. Stripe works using payment intents to verify the legitimacy of a user's credit/debit card details when making a purchase but doesn't save this information.
@@ -175,11 +174,19 @@ Wireframes and a data schema were created so that I had a clear vision of the we
 
 # Testing
 ### User Testing
-The navbar was tested by clicking each link with each type of user to see if they worked and expanded like intended.
+The navbar was tested by clicking each link and icon with each type of user to see if they worked and expanded like intended.
 
 ## Manual Testing
 ### Media Queries
-I tested the media queries by manually adjusting the screen size from roughly 500-1000px to make sure the correct changes were taking place above or below each specific screen size.
+I tested the media queries by manually adjusting the screen size from 576px-1200px to make sure the appropriate changes were taking place at each media query.
+
+At 576px 
+
+At 768px 
+
+At 1000px  
+
+At 1200px 
 
 ## Known Bugs
 * The text on the confirmation email page is hidden underneath the navbar.
@@ -233,7 +240,7 @@ This app was deployed using Heroku.
 * The name, description and price for the Classical Piano Sheet Music | 60 Famous Solos  was taken from https://www.amazon.com/dp/B09XDKH164/ref=sspa_dk_detail_1?psc=1&pd_rd_i=B09XDKH164&pd_rd_w=e0NPT&content-id=amzn1.sym.3be1c5b9-5b41-4830-a902-fa8556c19eb5&pf_rd_p=3be1c5b9-5b41-4830-a902-fa8556c19eb5&pf_rd_r=5C0MD8ADE4XZ393WM8BR&pd_rd_wg=CQdZu&pd_rd_r=44c5a3ba-0fb8-4480-a71b-6923c6fe201e&s=books&sp_csd=d2lkZ2V0TmFtZT1zcF9kZXRhaWw&spLa=ZW5jcnlwdGVkUXVhbGlmaWVyPUEyUkU1MkxITzVTMkdWJmVuY3J5cHRlZElkPUEwMzQwNDk0MVdGQTVZTE5YM1JYJmVuY3J5cHRlZEFkSWQ9QTA0MDQ5NDAxWDZWU0o2MklUVDBPJndpZGdldE5hbWU9c3BfZGV0YWlsJmFjdGlvbj1jbGlja1JlZGlyZWN0JmRvTm90TG9nQ2xpY2s9dHJ1ZQ==
 
 ## Media
-* The hero image came from https://media.gettyimages.com/photos/man-plays-the-piano-picture-id156996195?s=612x612
+* The hero image came from https://unsplash.com/s/photos/grand-piano
 * The Wurlizter image came from https://soundgas.com/wp-content/uploads/2020/12/Wurlitzer-Model-200-Electric-Piano-SN72352L-Cover-2.jpg
 * The Thomann DP-95 B image came from https://a.storyblok.com/f/49568/3604x3420/a500c85994/002_neu.jpg/m/1600x0/filters:quality(80):format(jpeg)
 * The Thomann DP-95 WH image came from https://a.storyblok.com/f/49568/3378x3194/5109b71e0b/002.jpg/m/1600x0/filters:quality(80):format(jpeg)
@@ -247,7 +254,6 @@ This app was deployed using Heroku.
 * The Lucan School of Music on the facebook mockup came from image came from https://www.facebook.com/lucanschoolofmusic/
 * Beethoven image on the facebook mockup came from was taken from https://en.wikipedia.org/wiki/Ludwig_van_Beethoven
 * To crop the images on the facebook mockup I used https://crop-circle.imageonline.co/
-
 
 ## Code Sources
 * Boilerplate text taken for the footer of index.html is from https://learn.codeinstitute.net/courses/course-v1:CodeInstitute+DRWM101+2021_T1/courseware/2b2a6057abf44272955637c09687ab43/acc4b7d56e3a400ebe110e5d734ce767/

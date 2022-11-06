@@ -52,10 +52,10 @@
                 <div class="row">
                     {% for product in products %}
                     <div class="col-sm-6 col-md-6 col-lg-4 col-xl-3">
-                        <div class="card h-100 border-0">
+                        <div class="card h-100 border-0 mx-1">
                             {% if product.image %}
                             <a href="{% url 'product_view' product.id %}">
-                                <img class="card-img-top img-fluid product_image" src="{{ product.image.url }}" alt="{{ product.name }}">
+                                <img class="card-img-top img-fluid product_image w-100" src="{{ product.image.url }}" alt="{{ product.name }}">
                             </a>
                             {% else %}
                             <a href="{% url 'product_view' product.id %}">
