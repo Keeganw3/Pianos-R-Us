@@ -148,8 +148,7 @@ a.category-badge > span.badge:hover {
     .product_image {
         width:30vw;
         height:30vh;
-    }
-    
+    }    
 }
 
 @media screen and (max-width: 576px) {
