@@ -134,13 +134,13 @@ a.category-badge > span.badge:hover {
 
 @media screen and (min-width: 1200px) {
     .icons-placement {
-        margin-left: 56%;
+        margin-left: 48%;
     }        
 }
 
 @media screen and (max-width: 992px) {
     .icons-placement {
-        margin-left: 38%;
+        margin-left: 33%;
     }
 }
 
@@ -148,6 +148,10 @@ a.category-badge > span.badge:hover {
     .product_image {
         width:30vw;
         height:30vh;
+    }
+
+    .icons-placement {
+        margin-left: 20%;
     }    
 }
 
