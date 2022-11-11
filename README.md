@@ -13,78 +13,86 @@ Users can order one item or multiple items and place them into a cart to be boug
 ## F1:Navigation Bar
 * The navigation bar is provided at the top of the webpage to allow the user to easily explore the website. It also maintains a consistent look across the website. The navbar lets the user find the products they're looking for by providing categories which can be further refined through filtering on the product page. They can also return to the home page through the site logo, and access their cart and account functionalities if they're signed in by clicking on the appropriate icons. If they're not signed in they will be shown links to sign in or register for an account instead. The account icon also changes colour based on whether the user is signed in or not. Lastly, the user can return to the landing page at any time using the site icon in the top left of the navbar.
 
+Fig 1: Desktop Navbar
 ![Main Navbar](static/screenshots/main_nav_screenshot.png)
+
+Fig 2: Mobile Navbar
 
 ![Mobile Navbar](static/screenshots/mobile_nav_screenshot(logout).png)
 
 ## F2:Landing Page
 * The landing page contains a hero image and hero text so that the user can intuitively understand what the app is selling and the goal of the company. There is also a shop now button if the user wants to go straight to the products or they can scroll down to get more information on what the app has to offer.
 
-![Landing Page]()
+Fig 3: Desktop Landing
+![Desktop Landing Page](static/screenshots/desktop-landing.png)
+
+Fig 4: Mobile Landing
+
+![Mobile Landing Page](static/screenshots/mobile-landing.png)
 
 ## F3:Products page
 All items in the store are displayed here with their images, names, prices, rating and categories. A user can use the navbar and sort function to filter through the products.
 
-![Products Page]()
+![Products Page](static/screenshots)
 
 ## F4:Product_view Page
 If the user clicks the image of the product on the products page they will be brought to the product details page where the product description along with the other product's relevant information is shown. The user can buy the item on its own or add it to a cart to purchase other products.
 
-![Product_view Page]()
+![Product_view Page](static/screenshots)
 
 ## F5:Product Management
 An admin is able to add, remove, and edit products as it is required. In order to add a product it must have a name, image and description. The option to remove and edit a product is only shown to an admin on the products page with two buttons underneath the product's image as shown in the screenshot below.
 
-![Product Management Page]()
+![Product Management Page](static/screenshots)
 
 ## F6:Cart
 When a user wants to buy several products at once they can use the cart. This keeps track of all the items the user has requested along with the amount, the cost per item and the total cost. The cart is available whether the user is signed in or not however the user won't be able to save their order history if they don't sign in.
 
-![User's Cart]()
+![User's Cart](static/screenshots)
 
 ## F7:Checkout
 When a user want to buy one or many items they can reach the checkout page where they're delivery and payment card information are required. The payment system has been securely set up using Stripe and several webhooks to notify the user if a problem occurs. When the user successfully places an order they receive a notification on the checkout_success page as shown below.
 
-![Checkout Page]()
+![Checkout Page](static/screenshots)
 
 ## Account Registration
 ### F8:Registration Page
 * This application allows the user to create an account to log in and access additional features on the app. When registering the webpage will ask for a username (that doesn't already exist), an optional email, a password, and the password a second time to confirm it. The webpage will detect the strength of the password entered to make sure it isn't too small or easy to figure out.
 
-![Registration page]()
+![Registration page](static/screenshots)
 
 ![Navbar Logged Out](static/screenshots/mobile_nav_screenshot(logout).png)
 
 ![Navbar Logged In](static/screenshots/mobile_nav_screenshot(login).png)
 
-![Navbar Logged In(General User)]()
+![Navbar Logged In(General User)](static/screenshots)
 
-![Navbar Logged In(Admin)]()
+![Navbar Logged In(Admin)](static/screenshots)
 
 ### F9:Login Page
 * Logging in lets the user leave reviews on posts. The register and login links are only in the navbar whenever the user isn't already logged in. When the user is logged in the navbar replaces register and log in with log out to easily allow the user to sign out when they're done.
 
-![Login page]()
+![Login page](static/screenshots)
 
 ### F10:Logout Page
 * The logout page will ask the user if they are certain that they would like to log out and they must press a button to confirm this.
 
-![Logout page]()
+![Logout page](static/screenshots)
 
 ## F11:User Account
 A user can make an account at anytime using the navbar. If a user does create an account this allows them to save their delivery information, leave reviews and shows a purchase history of previous orders. 
 
-![User Account Page]()
+![User Account Page](static/screenshots)
 
 ## F12:Reviews
 An account holder can leave reviews on the bottom of a product's detail page to tell people what they think of a product, how well it works and of it is worth the price. When a review is left they receive a notification that it will be assessed by an admin. Once an admin approves it, the review will appear at the bottom of the page.
 
-![User Reviews]()
+![User Reviews](static/screenshots)
 
 ## F13:Footer
 * The footer is used to link the user to the site's facebook page and subscription in case they want to learn about deals in the store. There is also text to let people know that this is strictly for educational use only.
 
-![Footer]()
+![Footer](static/screenshots)
 
 ## SEO and Marketing
 ### F14:Keywords and descriptions
@@ -105,14 +113,16 @@ The types of marketing used for this app were social media marketing and email m
 
 The email marketing was set up through Mailchimp which allowed users to subscribe to a newsletter from the website by entering their email address. This was placed in the footer of the website on each page. The subscribers list is maintained on Mailchimp.
 
-![Mailchimp Subscription]()
-![Mailchimp Subscription List]()
+![Mailchimp Subscription](static/screenshots)
+![Mailchimp Subscription List](static/screenshots)
 
 ### F15: Stripe Payment System
 The service was used to give customers a guarenteed safe way to pay for products so they don't have to worry about losing their credit/debit card details or the payment not going through. Stripe works using payment intents to verify the legitimacy of a user's credit/debit card details when making a purchase but doesn't save this information.
 
 ### Custom 404 page
 A custom 404 page was added to this application so that this page would aethestically fit in better with the rest of the site.
+
+![404 Page](static/screenshots)
 
 # Future Features to be added
 ### Staff Page
