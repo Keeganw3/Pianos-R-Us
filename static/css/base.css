@@ -151,8 +151,8 @@ a.category-badge > span.badge:hover {
     }
 
     .icons-placement {
-        margin-left: 20%;
-    }    
+        margin-left: 15%;
+    }
 }
 
 @media screen and (max-width: 576px) {

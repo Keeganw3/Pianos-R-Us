@@ -51,7 +51,7 @@
   </head>
   <body>
     <header class="container-fluid fixed-top">
-      <nav class="navbar navbar-nav mr-auto navbar-expand-lg navbar-light">
+      <nav class="navbar navbar-nav mr-auto navbar-expand-md navbar-expand-lg navbar-light">
         <a class="navbar-brand nav-link icons" href="{% url 'home' %}">Pianos-R-Us
           <span><i class="fas fa-music icons"></i></span>
         </a>
@@ -80,7 +80,7 @@
                             {% endif %}
                         </div>
                     </a>
-                    <div class="dropdown-menu border-0" aria-labelledby="user-options">
+                    <div class="dropdown-menu border-0 list-inline-item" aria-labelledby="user-options">
                         {% if request.user.is_authenticated %}
                             {% if request.user.is_superuser %}
                                 <a href="{% url 'add_product' %}" class="dropdown-item">Product Management</a>
