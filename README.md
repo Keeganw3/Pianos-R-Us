@@ -33,22 +33,33 @@ Fig 4: Mobile Landing
 ## F3:Products page
 All items in the store are displayed here with their images, names, prices, rating and categories. A user can use the navbar and sort function to filter through the products.
 
+Fig 5:
 ![Products Page](static/screenshots)
+
+Fig 6:
 
 ## F4:Product_view Page
 If the user clicks the image of the product on the products page they will be brought to the product details page where the product description along with the other product's relevant information is shown. The user can buy the item on its own or add it to a cart to purchase other products.
-
+Fig 7:
 ![Product_view Page](static/screenshots)
+
+Fig 8:
 
 ## F5:Product Management
 An admin is able to add, remove, and edit products as it is required. In order to add a product it must have a name, image and description. The option to remove and edit a product is only shown to an admin on the products page with two buttons underneath the product's image as shown in the screenshot below.
 
+Fig 9:
 ![Product Management Page](static/screenshots)
 
 ## F6:Cart
 When a user wants to buy several products at once they can use the cart. This keeps track of all the items the user has requested along with the amount, the cost per item and the total cost. The cart is available whether the user is signed in or not however the user won't be able to save their order history if they don't sign in.
 
-![User's Cart](static/screenshots)
+Fig 10: Desktop Cart
+![User's Cart](static/screenshots/desktop-cart.png)
+
+Fig 11: Mobile Cart
+
+![User's Cart](static/screenshots/mobile-cart.png)
 
 ## F7:Checkout
 When a user want to buy one or many items they can reach the checkout page where they're delivery and payment card information are required. The payment system has been securely set up using Stripe and several webhooks to notify the user if a problem occurs. When the user successfully places an order they receive a notification on the checkout_success page as shown below.

@@ -7,7 +7,7 @@
     <div class="container mb-2 nav-spacing">
         <div class="row">
             <div class="col">
-                <h2 class="mb-4">Cart</h2>
+                <h2 class="pt-3">Cart</h2>
                 <hr>
             </div>
         </div>
@@ -29,7 +29,7 @@
 
                             {% for item in cart_items %}
                                 <tr>
-                                    <td class="p-3 w-25">
+                                    <td class="p-1 w-26">
                                         {% if item.product.image %}
                                         <img class="img-fluid rounded" src="{{ item.product.image.url }}" alt="{{ item.product.name }}">
                                         {% else %}

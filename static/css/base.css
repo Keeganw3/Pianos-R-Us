@@ -140,7 +140,7 @@ a.category-badge > span.badge:hover {
 
 @media screen and (max-width: 992px) {
     .icons-placement {
-        margin-left: 33%;
+        margin-left: 30%;
     }
 }
 
@@ -151,7 +151,7 @@ a.category-badge > span.badge:hover {
     }
 
     .icons-placement {
-        margin-left: 15%;
+        margin-left: 10%;
     }
 }
 
@@ -164,5 +164,9 @@ a.category-badge > span.badge:hover {
     .shop-btn {
         margin-left: 6%;
         min-width: 160px;
+    }
+
+    .nav-spacing {
+        margin-top: 23%;
     }
 }
