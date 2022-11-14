@@ -33,76 +33,96 @@ Fig 4: Mobile Landing
 ## F3:Products page
 All items in the store are displayed here with their images, names, prices, rating and categories. A user can use the navbar and sort function to filter through the products.
 
-Fig 5:
+Fig 5: Product Listings
 ![Products Page](static/screenshots)
 
-Fig 6:
+Fig 6: Mobile Products Listings
+
+![Products Page](static/screenshots)
+
+Fig 7: Product Listings Filter
+
+![Products Page](static/screenshots/desktop-products-filter.png)
 
 ## F4:Product_view Page
 If the user clicks the image of the product on the products page they will be brought to the product details page where the product description along with the other product's relevant information is shown. The user can buy the item on its own or add it to a cart to purchase other products.
-Fig 7:
-![Product_view Page](static/screenshots)
 
-Fig 8:
+Fig 8: Product Page
+![Product_view Page](static/screenshots/desktop-product-view.png)
+
+Fig 9: Mobile Product Page
+
+![Products_view Page](static/screenshots)
 
 ## F5:Product Management
 An admin is able to add, remove, and edit products as it is required. In order to add a product it must have a name, image and description. The option to remove and edit a product is only shown to an admin on the products page with two buttons underneath the product's image as shown in the screenshot below.
 
-Fig 9:
+Fig 10: Product Management Page
 ![Product Management Page](static/screenshots)
 
 ## F6:Cart
 When a user wants to buy several products at once they can use the cart. This keeps track of all the items the user has requested along with the amount, the cost per item and the total cost. The cart is available whether the user is signed in or not however the user won't be able to save their order history if they don't sign in.
 
-Fig 10: Desktop Cart
+Fig 11: Desktop Cart Page
 ![User's Cart](static/screenshots/desktop-cart.png)
 
-Fig 11: Mobile Cart
+Fig 12: Mobile Cart Page
 
 ![User's Cart](static/screenshots/mobile-cart.png)
 
 ## F7:Checkout
 When a user want to buy one or many items they can reach the checkout page where they're delivery and payment card information are required. The payment system has been securely set up using Stripe and several webhooks to notify the user if a problem occurs. When the user successfully places an order they receive a notification on the checkout_success page as shown below.
 
+Fig 13: Checkout Page
 ![Checkout Page](static/screenshots)
 
 ## Account Registration
 ### F8:Registration Page
 * This application allows the user to create an account to log in and access additional features on the app. When registering the webpage will ask for a username (that doesn't already exist), an optional email, a password, and the password a second time to confirm it. The webpage will detect the strength of the password entered to make sure it isn't too small or easy to figure out.
 
+Fig 14: Registration Page
 ![Registration page](static/screenshots)
+
+Fig 15: Navbar Logged Out
 
 ![Navbar Logged Out](static/screenshots/mobile_nav_screenshot(logout).png)
 
+Fig 16: Navbar User Logged In
+
 ![Navbar Logged In](static/screenshots/mobile_nav_screenshot(login).png)
 
-![Navbar Logged In(General User)](static/screenshots)
+Fig 17: Navbar Admin Logged In
 
 ![Navbar Logged In(Admin)](static/screenshots)
 
 ### F9:Login Page
 * Logging in lets the user leave reviews on posts. The register and login links are only in the navbar whenever the user isn't already logged in. When the user is logged in the navbar replaces register and log in with log out to easily allow the user to sign out when they're done.
 
+Fig 18: Login Page
 ![Login page](static/screenshots)
 
 ### F10:Logout Page
 * The logout page will ask the user if they are certain that they would like to log out and they must press a button to confirm this.
 
+Fig 19: Logout Page
 ![Logout page](static/screenshots)
 
-## F11:User Account
+## F11:Accounts
 A user can make an account at anytime using the navbar. If a user does create an account this allows them to save their delivery information, leave reviews and shows a purchase history of previous orders. 
 
-![User Account Page](static/screenshots)
+Fig 20: Account Page
+![Account Page](static/screenshots)
 
 ## F12:Reviews
 An account holder can leave reviews on the bottom of a product's detail page to tell people what they think of a product, how well it works and of it is worth the price. When a review is left they receive a notification that it will be assessed by an admin. Once an admin approves it, the review will appear at the bottom of the page.
 
-![User Reviews](static/screenshots)
+Fig 21: Reviews
+![Reviews](static/screenshots)
 
 ## F13:Footer
 * The footer is used to link the user to the site's facebook page and subscription in case they want to learn about deals in the store. There is also text to let people know that this is strictly for educational use only.
 
+Fig 22: Footer
 ![Footer](static/screenshots)
 
 ## SEO and Marketing
@@ -124,7 +144,11 @@ The types of marketing used for this app were social media marketing and email m
 
 The email marketing was set up through Mailchimp which allowed users to subscribe to a newsletter from the website by entering their email address. This was placed in the footer of the website on each page. The subscribers list is maintained on Mailchimp.
 
+Fig 23: Mailchimp Footer Section
 ![Mailchimp Subscription](static/screenshots)
+
+Fig 24:Mailchimp Subs List
+
 ![Mailchimp Subscription List](static/screenshots)
 
 ### F15: Stripe Payment System
@@ -133,6 +157,7 @@ The service was used to give customers a guarenteed safe way to pay for products
 ### Custom 404 page
 A custom 404 page was added to this application so that this page would aethestically fit in better with the rest of the site.
 
+Fig 25: 404 Page
 ![404 Page](static/screenshots)
 
 # Future Features to be added
