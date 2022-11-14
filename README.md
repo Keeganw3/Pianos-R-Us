@@ -18,7 +18,7 @@ Fig 1: Desktop Navbar
 
 Fig 2: Mobile Navbar
 
-![Mobile Navbar](static/screenshots/mobile_nav_screenshot(logout).png)
+![Mobile Navbar](static/screenshots/mobile-navbar-log-out.png.png)
 
 ## F2:Landing Page
 * The landing page contains a hero image and hero text so that the user can intuitively understand what the app is selling and the goal of the company. There is also a shop now button if the user wants to go straight to the products or they can scroll down to get more information on what the app has to offer.
@@ -61,6 +61,7 @@ Fig 10: Desktop Product Management
 ![Desktop Product Management](static/screenshots/desktop-add.png)
 
 Fig 11: Mobile Product Management
+
 ![Mobile Product Management](static/screenshots/mobile-add.png)
 
 ## F6:Cart
@@ -91,57 +92,65 @@ Fig 16: Desktop Registration
 ![Desktop Registration](static/screenshots/desktop-register.png)
 
 Fig 17: Mobile Registration
+
 ![Mobile Registration](static/screenshots/mobile-register.png)
 
-Fig 18: Navbar Logged Out
+Fig 18: Email Verification
 
-![Navbar Logged Out](static/screenshots/mobile_nav_screenshot(logout).png)
+![Email Verification](static/screenshots/mobile-verification.png)
 
-Fig 19: Navbar User Logged In
+Fig 19: Navbar Logged Out
 
-![Navbar Logged In](static/screenshots/mobile_nav_screenshot(login).png)
+![Navbar Logged Out](static/screenshots/log-out-navbar.png)
 
-Fig 20: Navbar Admin Logged In
+Fig 20: Navbar User Logged In
 
-![Navbar Logged In(Admin)](static/screenshots)
+![Navbar Logged In](static/screenshots/user-navbar.png)
+
+Fig 21: Navbar Admin Logged In
+
+![Navbar Logged In(Admin)](static/screenshots/admin-navbar.png)
 
 ### F9:Login Page
 * Logging in lets the user leave reviews on posts. The register and login links are only in the navbar whenever the user isn't already logged in. When the user is logged in the navbar replaces register and log in with log out to easily allow the user to sign out when they're done.
 
-Fig 21: Desktop Login
+Fig 22: Desktop Login
 ![Desktop Login page](static/screenshots/desktop-log-in.png)
 
-Fig 22: Mobile Login
+Fig 23: Mobile Login
 ![Mobile Login page](static/screenshots/mobile-log-in.png)
 
 ### F10:Logout Page
 * The logout page will ask the user if they are certain that they would like to log out and they must press a button to confirm this.
 
-Fig 23: Desktop Logout
+Fig 24: Desktop Logout
 ![Desktop Logout](static/screenshots/desktop-log-out.png)
 
-Fig 24: Mobile Logout
+Fig 25: Mobile Logout
 ![Mobile Logout](static/screenshots/mobile-log-out.png)
 
 ## F11:Accounts
 A user can make an account at anytime using the navbar. If a user does create an account this allows them to save their delivery information, leave reviews and shows a purchase history of previous orders. 
 
-Fig 25: Account Page
+Fig 26: Desktop Account Page
 ![Account Page](static/screenshots)
+
+Fig 27: Mobile Account Page
+![Mobile Account Page](static/screenshots)
 
 ## F12:Reviews
 An account holder can leave reviews on the bottom of a product's detail page to tell people what they think of a product, how well it works and of it is worth the price. When a review is left they receive a notification that it will be assessed by an admin. Once an admin approves it, the review will appear at the bottom of the page.
 
-Fig 26: Reviews
+Fig 28: Reviews
 ![Reviews](static/screenshots)
 
 ## F13:Footer
 * The footer is used to link the user to the site's facebook page and subscription in case they want to learn about deals in the store. There is also text to let people know that this is strictly for educational use only.
 
-Fig 27: Desktop Footer
+Fig 29: Desktop Footer
 ![Footer](static/screenshots/desktop-footer.png)
 
-Fig 28: Mobile Footer
+Fig 30: Mobile Footer
 
 ![Footer](static/screenshots/mobile-footer.png)
 
@@ -164,10 +173,10 @@ Facebook Mockup: https://github.com/Keeganw3/Pianos-R-Us/blob/main/pianos_r_us/f
 
 The email marketing was set up through Mailchimp which allowed users to subscribe to a newsletter from the website by entering their email address. This was placed in the footer of the website on each page. The subscribers list is maintained on Mailchimp.
 
-Fig 29: Mailchimp Sub Section
+Fig 31: Mailchimp Sub Section
 ![Mailchimp Subscription](static/screenshots/mailchimp.png)
 
-Fig 30:Mailchimp Subs List
+Fig 32:Mailchimp Subs List
 
 ![Mailchimp Subscription List](static/screenshots)
 
@@ -177,7 +186,7 @@ The service was used to give customers a guarenteed safe way to pay for products
 ### Custom 404 page
 A custom 404 page was added to this application so that this page would aethestically fit in better with the rest of the site.
 
-Fig 31: 404 Page
+Fig 33: Custom 404 Page
 ![404 Page](static/screenshots)
 
 # Future Features to be added
