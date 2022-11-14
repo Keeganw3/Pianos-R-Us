@@ -5,7 +5,7 @@ This is a confirmation of your order at Boutique Ado. Your order information is 
 Order Number: {{ order.order_id }}
 Order Date: {{ order.checkout_date }}
 
-Order Total: ${{ order.order_total_cost }}
+Order Total: €{{ order.order_total_cost }}
 
 Your order will be shipped to {{ order.street_address_1 }} in {{ order.city }}, {{ order.country }}.
 

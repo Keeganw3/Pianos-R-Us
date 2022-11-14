@@ -140,12 +140,20 @@ a.category-badge > span.badge:hover {
 @media screen and (min-width: 1200px) {
     .icons-placement {
         margin-left: 48%;
-    }        
+    }
+    
+    .allauth-spacing {
+        margin-top: 33%;
+    }
 }
 
 @media screen and (max-width: 992px) {
     .icons-placement {
         margin-left: 30%;
+    }
+
+    .allauth-spacing {
+        margin-top: 8rem;
     }
 }
 
@@ -157,6 +165,10 @@ a.category-badge > span.badge:hover {
 
     .icons-placement {
         margin-left: 10%;
+    }
+    
+    .allauth-spacing {
+        margin-top: 8rem;
     }
 }
 
