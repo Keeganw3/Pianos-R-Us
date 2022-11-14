@@ -109,6 +109,11 @@ a.category-badge > span.badge:hover {
     border-radius: 50%;
 }
 
+/* Checkout Page */
+.checkout-spacing {
+    margin-top: 5%;
+}
+
 /* Allauth form formatting */
 
 .allauth-spacing {
@@ -168,5 +173,9 @@ a.category-badge > span.badge:hover {
 
     .nav-spacing {
         margin-top: 23%;
+    }
+    
+    .checkout-spacing {
+        padding-top: 12%;
     }
 }
