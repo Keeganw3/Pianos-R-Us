@@ -57,73 +57,81 @@ Fig 9: Mobile Product Page
 ## F5:Product Management
 An admin is able to add, remove, and edit products as it is required. In order to add a product it must have a name, image and description. The option to remove and edit a product is only shown to an admin on the products page with two buttons underneath the product's image as shown in the screenshot below.
 
-Fig 10: Product Management Page
-![Product Management Page](static/screenshots)
+Fig 10: Desktop Product Management
+![Desktop Product Management](static/screenshots/desktop-add.png)
+
+Fig 11: Mobile Product Management
+
+![Mobile Product Management](static/screenshots/mobile-add.png)
 
 ## F6:Cart
 When a user wants to buy several products at once they can use the cart. This keeps track of all the items the user has requested along with the amount, the cost per item and the total cost. The cart is available whether the user is signed in or not however the user won't be able to save their order history if they don't sign in.
 
-Fig 11: Desktop Cart Page
-![User's Cart](static/screenshots/desktop-cart.png)
+Fig 12: Desktop Cart Page
+![Desktop Cart](static/screenshots/desktop-cart.png)
 
-Fig 12: Mobile Cart Page
+Fig 13: Mobile Cart Page
 
-![User's Cart](static/screenshots/mobile-cart.png)
+![Mobile Cart](static/screenshots/mobile-cart.png)
 
 ## F7:Checkout
 When a user want to buy one or many items they can reach the checkout page where they're delivery and payment card information are required. The payment system has been securely set up using Stripe and several webhooks to notify the user if a problem occurs. When the user successfully places an order they receive a notification on the checkout_success page as shown below.
 
-Fig 13: Checkout Page
+Fig 14: Checkout Page
 ![Checkout Page](static/screenshots)
 
 ## Account Registration
 ### F8:Registration Page
 * This application allows the user to create an account to log in and access additional features on the app. When registering the webpage will ask for a username (that doesn't already exist), an optional email, a password, and the password a second time to confirm it. The webpage will detect the strength of the password entered to make sure it isn't too small or easy to figure out.
 
-Fig 14: Registration Page
+Fig 15: Registration Page
 ![Registration page](static/screenshots)
 
-Fig 15: Navbar Logged Out
+Fig 16: Navbar Logged Out
 
 ![Navbar Logged Out](static/screenshots/mobile_nav_screenshot(logout).png)
 
-Fig 16: Navbar User Logged In
+Fig 17: Navbar User Logged In
 
 ![Navbar Logged In](static/screenshots/mobile_nav_screenshot(login).png)
 
-Fig 17: Navbar Admin Logged In
+Fig 18: Navbar Admin Logged In
 
 ![Navbar Logged In(Admin)](static/screenshots)
 
 ### F9:Login Page
 * Logging in lets the user leave reviews on posts. The register and login links are only in the navbar whenever the user isn't already logged in. When the user is logged in the navbar replaces register and log in with log out to easily allow the user to sign out when they're done.
 
-Fig 18: Login Page
+Fig 19: Login Page
 ![Login page](static/screenshots)
 
 ### F10:Logout Page
 * The logout page will ask the user if they are certain that they would like to log out and they must press a button to confirm this.
 
-Fig 19: Logout Page
+Fig 20: Logout Page
 ![Logout page](static/screenshots)
 
 ## F11:Accounts
 A user can make an account at anytime using the navbar. If a user does create an account this allows them to save their delivery information, leave reviews and shows a purchase history of previous orders. 
 
-Fig 20: Account Page
+Fig 21: Account Page
 ![Account Page](static/screenshots)
 
 ## F12:Reviews
 An account holder can leave reviews on the bottom of a product's detail page to tell people what they think of a product, how well it works and of it is worth the price. When a review is left they receive a notification that it will be assessed by an admin. Once an admin approves it, the review will appear at the bottom of the page.
 
-Fig 21: Reviews
+Fig 22: Reviews
 ![Reviews](static/screenshots)
 
 ## F13:Footer
 * The footer is used to link the user to the site's facebook page and subscription in case they want to learn about deals in the store. There is also text to let people know that this is strictly for educational use only.
 
-Fig 22: Footer
-![Footer](static/screenshots)
+Fig 23: Desktop Footer
+![Footer](static/screenshots/desktop-footer.png)
+
+Fig 24: Mobile Footer
+
+![Footer](static/screenshots/mobile-footer.png)
 
 ## SEO and Marketing
 ### F14:Keywords and descriptions
@@ -140,14 +148,14 @@ The words and phrases were used for:
 ### Marketing Techniques
 The types of marketing used for this app were social media marketing and email marketing. A facebook page was set up to advertise that this website exists.
 
-![Facebook Mockup](pianos_r_us_facebook_mockup.pdf)
+Facebook Mockup: https://github.com/Keeganw3/Pianos-R-Us/blob/main/pianos_r_us/facebook_mockup/pianos_r_us_facebook_mockup.pdf
 
 The email marketing was set up through Mailchimp which allowed users to subscribe to a newsletter from the website by entering their email address. This was placed in the footer of the website on each page. The subscribers list is maintained on Mailchimp.
 
-Fig 23: Mailchimp Footer Section
-![Mailchimp Subscription](static/screenshots)
+Fig 25: Mailchimp Sub Section
+![Mailchimp Subscription](static/screenshots/mailchimp.png)
 
-Fig 24:Mailchimp Subs List
+Fig 26:Mailchimp Subs List
 
 ![Mailchimp Subscription List](static/screenshots)
 
@@ -157,7 +165,7 @@ The service was used to give customers a guarenteed safe way to pay for products
 ### Custom 404 page
 A custom 404 page was added to this application so that this page would aethestically fit in better with the rest of the site.
 
-Fig 25: 404 Page
+Fig 27: 404 Page
 ![404 Page](static/screenshots)
 
 # Future Features to be added
@@ -199,7 +207,7 @@ Notifications that would tell the user whenever they add, update or remove items
 <details>
 <summary>Wireframes</summary>
 
-![Wireframes](static/wireframes/pianos-r-us-wireframes.png)
+![Wireframes](static/wireframes/pianos-r-us-wireframes.pdf)
 
 </details>
 
