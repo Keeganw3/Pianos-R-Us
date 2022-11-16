@@ -18,7 +18,7 @@ Fig 1: Desktop Navbar
 
 Fig 2: Mobile Navbar
 
-![Mobile Navbar](static/screenshots/mobile-navbar-log-out.png.png)
+![Mobile Navbar](static/screenshots/mobile-navbar-log-out.png)
 
 ## F2:Landing Page
 * The landing page contains a hero image and hero text so that the user can intuitively understand what the app is selling and the goal of the company. There is also a shop now button if the user wants to go straight to the products or they can scroll down to get more information on what the app has to offer.
@@ -97,7 +97,7 @@ Fig 17: Mobile Registration
 
 Fig 18: Email Verification
 
-![Email Verification](static/screenshots/mobile-verification.png)
+![Email Verification](static/screenshots/verify-email.png)
 
 Fig 19: Navbar Logged Out
 
@@ -118,6 +118,7 @@ Fig 22: Desktop Login
 ![Desktop Login page](static/screenshots/desktop-log-in.png)
 
 Fig 23: Mobile Login
+
 ![Mobile Login page](static/screenshots/mobile-log-in.png)
 
 ### F10:Logout Page
@@ -127,15 +128,17 @@ Fig 24: Desktop Logout
 ![Desktop Logout](static/screenshots/desktop-log-out.png)
 
 Fig 25: Mobile Logout
+
 ![Mobile Logout](static/screenshots/mobile-log-out.png)
 
 ## F11:Accounts
 A user can make an account at anytime using the navbar. If a user does create an account this allows them to save their delivery information, leave reviews and shows a purchase history of previous orders. 
 
 Fig 26: Desktop Account Page
-![Account Page](static/screenshots)
+![Desktop Account Page](static/screenshots)
 
 Fig 27: Mobile Account Page
+
 ![Mobile Account Page](static/screenshots)
 
 ## F12:Reviews
@@ -174,6 +177,7 @@ Facebook Mockup: https://github.com/Keeganw3/Pianos-R-Us/blob/main/pianos_r_us/f
 The email marketing was set up through Mailchimp which allowed users to subscribe to a newsletter from the website by entering their email address. This was placed in the footer of the website on each page. The subscribers list is maintained on Mailchimp.
 
 Fig 31: Mailchimp Sub Section
+
 ![Mailchimp Subscription](static/screenshots/mailchimp.png)
 
 Fig 32:Mailchimp Subs List
