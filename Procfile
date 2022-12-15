@@ -1,1 +1,0 @@
-web: gunicorn pianos_r_us.wsgi:application
