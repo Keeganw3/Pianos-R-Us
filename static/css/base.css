@@ -109,7 +109,14 @@ a.category-badge > span.badge:hover {
     border-radius: 50%;
 }
 
+/* Account Page */
+
+.account-spacing {
+    margin-top: 15%;
+}
+
 /* Checkout Page */
+
 .checkout-spacing {
     margin-top: 5%;
 }
@@ -145,6 +152,11 @@ a.category-badge > span.badge:hover {
     .allauth-spacing {
         margin-top: 33%;
     }
+
+    .account-spacing {
+        padding-top: 3%;
+    }
+    
 }
 
 @media screen and (max-width: 992px) {
@@ -170,6 +182,11 @@ a.category-badge > span.badge:hover {
     .allauth-spacing {
         margin-top: 8rem;
     }
+    
+    .account-spacing {
+        padding-top: 3rem;
+    }   
+
 }
 
 @media screen and (max-width: 576px) {
@@ -187,6 +204,10 @@ a.category-badge > span.badge:hover {
         margin-top: 23%;
     }
     
+    .account-spacing {
+        margin-top: 18%;
+    }
+
     .checkout-spacing {
         padding-top: 12%;
     }

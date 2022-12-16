@@ -15,11 +15,11 @@
 
 {% block content %}
     <div class="overlay"></div>
-    <div class="container nav-spacing">
+    <div class="container account-spacing">
         <div class="row">
             <div class="col">
                 <hr>
-                <h2 class="logo-font mb-4 text-center">My Account</h2>
+                <h2 class="account-header mb-4 text-center">My Account</h2>
                 <hr>
             </div>
         </div>
@@ -58,12 +58,12 @@
                                         <ul class="list-unstyled">
                                             {% for item in order.lineitems.all %}
                                                 <li class="small">
-                                                    {{ item.product.name }} x{{ item.quantity }}
+                                                    {{ item.product.name }} x {{ item.quantity }}
                                                 </li>
                                             {% endfor %}
                                         </ul>
                                     </td>
-                                    <td>€{{ order.order_total_cost }}</td>
+                                    <td>€{{ order_total_cost | floatformat:2 }}</td>
                                 </tr>
                             {% endfor %}
                         </tbody>

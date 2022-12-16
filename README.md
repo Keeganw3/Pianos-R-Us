@@ -259,7 +259,7 @@ The navbar was tested by clicking each link and icon with each type of user to s
 ### Media Queries
 I tested the media queries by manually adjusting the screen size from 576px-1200px to make sure the appropriate changes were taking place at each media query.
 
-At 576px 
+At 576px
 
 At 768px 
 
