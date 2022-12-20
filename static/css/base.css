@@ -98,6 +98,10 @@ a.category-badge > span.badge:hover {
     color: #fff !important;
 }
 
+.product-spacing {
+    margin-top: 13%;
+}
+
 .product_image {
     width:25vw;
     height:40vh;
@@ -203,7 +207,11 @@ a.category-badge > span.badge:hover {
     .nav-spacing {
         margin-top: 23%;
     }
-    
+ 
+    .product-spacing {
+        margin-top: 23%;
+    }
+
     .account-spacing {
         margin-top: 18%;
     }

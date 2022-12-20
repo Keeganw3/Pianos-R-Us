@@ -34,15 +34,15 @@ Fig 4: Mobile Landing
 All items in the store are displayed here with their images, names, prices, rating and categories. A user can use the navbar and sort function to filter through the products.
 
 Fig 5: Product Listings
-![Products Page](static/screenshots)
+![Products Page](static/screenshots/desktop-products.png)
 
 Fig 6: Mobile Products Listings
 
-![Products Page](static/screenshots)
+![Products Page](static/screenshots/mobile-products.png)
 
 Fig 7: Product Listings Filter
 
-![Products Page](static/screenshots/desktop-products-filter.png)
+![Products Page](static/screenshots/products-filter.png)
 
 ## F4:Product_view Page
 If the user clicks the image of the product on the products page they will be brought to the product details page where the product description along with the other product's relevant information is shown. The user can buy the item on its own or add it to a cart to purchase other products.
@@ -84,76 +84,84 @@ Fig 15: Mobile Checkout Page
 
 ![Mobile Checkout Page](static/screenshots/mobile-checkout.png)
 
+Fig 16: Desktop Checkout Confirmation Page
+
+![Desktop Checkout Page](static/screenshots/desktop-checkout-success.png)
+
+Fig 17: Mobile Checkout Confirmation Page
+
+![Mobile Checkout Page](static/screenshots/mobile-checkout-success.png)
+
 ## Account Registration
 ### F8:Registration Page
 * This application allows the user to create an account to log in and access additional features on the app. When registering the webpage will ask for a username (that doesn't already exist), an optional email, a password, and the password a second time to confirm it. The webpage will detect the strength of the password entered to make sure it isn't too small or easy to figure out.
 
-Fig 16: Desktop Registration
+Fig 18: Desktop Registration
 ![Desktop Registration](static/screenshots/desktop-register.png)
 
-Fig 17: Mobile Registration
+Fig 19: Mobile Registration
 
 ![Mobile Registration](static/screenshots/mobile-register.png)
 
-Fig 18: Email Verification
+Fig 20: Email Verification
 
 ![Email Verification](static/screenshots/verify-email.png)
 
-Fig 19: Navbar Logged Out
+Fig 21: Navbar Logged Out
 
 ![Navbar Logged Out](static/screenshots/log-out-navbar.png)
 
-Fig 20: Navbar User Logged In
+Fig 22: Navbar User Logged In
 
 ![Navbar Logged In](static/screenshots/user-navbar.png)
 
-Fig 21: Navbar Admin Logged In
+Fig 23: Navbar Admin Logged In
 
 ![Navbar Logged In(Admin)](static/screenshots/admin-navbar.png)
 
 ### F9:Login Page
 * Logging in lets the user leave reviews on posts. The register and login links are only in the navbar whenever the user isn't already logged in. When the user is logged in the navbar replaces register and log in with log out to easily allow the user to sign out when they're done.
 
-Fig 22: Desktop Login
+Fig 24: Desktop Login
 ![Desktop Login page](static/screenshots/desktop-log-in.png)
 
-Fig 23: Mobile Login
+Fig 25: Mobile Login
 
 ![Mobile Login page](static/screenshots/mobile-log-in.png)
 
 ### F10:Logout Page
 * The logout page will ask the user if they are certain that they would like to log out and they must press a button to confirm this.
 
-Fig 24: Desktop Logout
+Fig 26: Desktop Logout
 ![Desktop Logout](static/screenshots/desktop-log-out.png)
 
-Fig 25: Mobile Logout
+Fig 27: Mobile Logout
 
 ![Mobile Logout](static/screenshots/mobile-log-out.png)
 
 ## F11:Accounts
 A user can make an account at anytime using the navbar. If a user does create an account this allows them to save their delivery information, leave reviews and shows a purchase history of previous orders. 
 
-Fig 26: Desktop Account Page
-![Desktop Account Page](static/screenshots)
+Fig 28: Desktop Account Page
+![Desktop Account Page](static/screenshots/desktop-account.png)
 
-Fig 27: Mobile Account Page
+Fig 29: Mobile Account Page
 
-![Mobile Account Page](static/screenshots)
+![Mobile Account Page](static/screenshots/mobile-account.png)
 
 ## F12:Reviews
 An account holder can leave reviews on the bottom of a product's detail page to tell people what they think of a product, how well it works and of it is worth the price. When a review is left they receive a notification that it will be assessed by an admin. Once an admin approves it, the review will appear at the bottom of the page.
 
-Fig 28: Reviews
+Fig 30: Reviews
 ![Reviews](static/screenshots)
 
 ## F13:Footer
 * The footer is used to link the user to the site's facebook page and subscription in case they want to learn about deals in the store. There is also text to let people know that this is strictly for educational use only.
 
-Fig 29: Desktop Footer
+Fig 31: Desktop Footer
 ![Footer](static/screenshots/desktop-footer.png)
 
-Fig 30: Mobile Footer
+Fig 32: Mobile Footer
 
 ![Footer](static/screenshots/mobile-footer.png)
 
@@ -176,13 +184,9 @@ Facebook Mockup: https://github.com/Keeganw3/Pianos-R-Us/blob/main/pianos_r_us/f
 
 The email marketing was set up through Mailchimp which allowed users to subscribe to a newsletter from the website by entering their email address. This was placed in the footer of the website on each page. The subscribers list is maintained on Mailchimp.
 
-Fig 31: Mailchimp Sub Section
+Fig 33: Mailchimp Sub Section
 
 ![Mailchimp Subscription](static/screenshots/mailchimp.png)
-
-Fig 32:Mailchimp Subs List
-
-![Mailchimp Subscription List](static/screenshots)
 
 ### F15: Stripe Payment System
 The service was used to give customers a guarenteed safe way to pay for products so they don't have to worry about losing their credit/debit card details or the payment not going through. Stripe works using payment intents to verify the legitimacy of a user's credit/debit card details when making a purchase but doesn't save this information.
@@ -190,7 +194,7 @@ The service was used to give customers a guarenteed safe way to pay for products
 ### Custom 404 page
 A custom 404 page was added to this application so that this page would aethestically fit in better with the rest of the site.
 
-Fig 33: Custom 404 Page
+Fig 34: Custom 404 Page
 ![404 Page](static/screenshots)
 
 # Future Features to be added
