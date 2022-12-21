@@ -15,7 +15,7 @@
     <div class="container-fluid nav-spacing">
         <div class="row">
             <div class="col-12 col-md-6 offset-lg-1">
-                <div class="my-5">
+                <div class="my-5 my-sm-3 pt-sm-3">
                     {% if product.image %}
                         <a href="{{ product.image.url }}" target="_blank">
                             <img class="card-img-top img-fluid" src="{{ product.image.url }}" alt="{{ product.name }}">
@@ -33,7 +33,7 @@
                 </div>
             </div>
             <div class="col-12 col-md-6 col-lg-4">
-                <div class="mb-5 mt-md-5">
+                <div class="mb-5 mt-md-5 mt-sm-1">
                     <p class="mb-0">{{ product.name }}</p>
                     <p class="lead mb-0 text-left font-weight-bold">€{{ product.price }}</p>
                     {% if product.category %}
@@ -123,9 +123,8 @@
                     </div>
                 </div>
                 <div class="col-md-4 card mb-4 mt-3">
+                    {% if left_review %}
                     <div class="card-body">
-                        <!-- For later -->
-                        {% if left_review %}
                         <div class="alert alert-success" role="alert">
                             Your review is awaiting approval
                         </div>

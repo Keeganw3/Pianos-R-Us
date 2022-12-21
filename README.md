@@ -52,7 +52,7 @@ Fig 8: Product Page
 
 Fig 9: Mobile Product Page
 
-![Products_view Page](static/screenshots)
+![Products_view Page](static/screenshots/mobile-product-view.png)
 
 ## F5:Product Management
 An admin is able to add, remove, and edit products as it is required. In order to add a product it must have a name, image and description. The option to remove and edit a product is only shown to an admin on the products page with two buttons underneath the product's image as shown in the screenshot below.
